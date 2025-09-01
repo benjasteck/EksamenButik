@@ -6,7 +6,8 @@
 <?php
 
 ?>
-<p>hej</p>
+
+<?php get_template_part( 'sections/partnere' ); ?>
 
 <?php endwhile; ?>
 <?php endif; ?>
