@@ -14,7 +14,7 @@
 </head>
 
 
-<body> <?php body_class() ?>>
+<body <?php body_class() ?>>
     <?php if(have_posts()): ?>
     <?php while(have_posts()): the_post() ?>
 
