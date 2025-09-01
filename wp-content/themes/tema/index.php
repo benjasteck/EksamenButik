@@ -7,7 +7,7 @@
 
 ?>
 
-<?php get_template_part( 'sections/partnere' ); ?>
+<?php get_template_part( 'Sections/partnere' ); ?>
 
 <?php endwhile; ?>
 <?php endif; ?>
