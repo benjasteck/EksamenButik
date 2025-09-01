@@ -2,3 +2,994 @@
 Description: This is a CSS file for styling a simple HTML page
 Author: Formwave 
 Date: 2025-20-08 
+*/
+
+:root{
+    --minWidth: 1300px;
+    --maxWidth: 1500px;
+    --width: 80%
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    background: #2a2a2a fixed;
+    color: #ffffff;
+    overflow-x: hidden;
+
+}
+#header{
+    width: 100%;
+    height: 100vh;
+    background-image: url("images/Homeherobillede.jpg");
+    background-size: cover;
+    background-position: center;
+   
+}
+.container{
+    width: calc(100% - 100px);
+    height: 110px;
+    margin: 0px auto;
+    padding-top: 50px;
+}
+nav{
+    background-color: #25252540;
+    width: 100%;
+    height: 100%;
+    border-radius: 50px;
+     display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    backdrop-filter: blur(4px);
+    border: 1px solid #bcbcbc;
+    
+}
+.navRight{
+   
+    
+    height: 100%;
+    display: flex;              
+  align-items: center;        
+  justify-content: center; 
+}
+.CTABtn1{
+    width: 130px;
+    height: 80%;
+     background: linear-gradient(45deg, #00C8A7 0%, #4445BC 50%, #C700A2 100%);
+    border-radius: 25px;
+    margin-right: 10px;
+    display: flex;              /* make it a flexbox */
+  align-items: center;        /* vertical center */
+  justify-content: center;
+}
+.CTABtn1 p{
+    margin: 0;
+font-size: 20px;
+font-weight: 400;
+}
+.navMid{
+   
+    height: 100%;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+
+}
+.navBtn{
+    height: 80%;
+    width: 120px;
+    border-radius: 25px;
+    background-color: #00000040;
+    backdrop-filter: blur(4px);
+     display: flex;              /* make it a flexbox */
+  align-items: center;        /* vertical center */
+  justify-content: center;    /* horizontal center */
+}
+
+.navBtn p{
+margin: 0;
+font-size: 16px;
+font-weight: 400;
+}
+.navBtn:hover{
+    background-color: #00C8A740;
+    cursor: pointer;
+    font-weight: 700;
+}
+.navBtn:hover p{
+    font-weight: 600;
+}
+.navBtn.selected{
+    background-color: #ffffffcc;
+}
+.navBtn.selected p{
+font-weight: 700;
+color: #2a2a2a;    
+}
+.navLeft{
+    height: 100%;
+}
+.logo img{
+    height: 60px;
+    width: auto;
+    filter: invert(1);
+    margin-left: 10px;
+}
+.textContainer{
+    margin-bottom: 33vh;
+    background-color: red;
+    width: 100px;
+    height: 200px;
+}
+
+.main-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end; /* This aligns items to the bottom */
+  height: 100vh;
+  /* Add these to center the content horizontally */
+  align-items: center;
+  text-align: center;
+}
+
+.main-content-wrapper {
+  margin-bottom: 19.5vh; /* This lifts the entire wrapper up by 33% of the viewport height */
+}
+.main-heading{
+    font-family: 'Goldman', sans-serif;
+    font-size: 128px;
+   background-color: #d7c4d8; /* Your background color */
+  color: transparent;
+  text-shadow: 4px 0 8px rgba(255, 255, 255, 0.4); /* Shadow color: white with 50% opacity */
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+.subtext{
+    margin-top: 2%;
+    font-size: 24px;
+    font-weight: 900;
+}
+.description{
+    font-size: 14px;
+    font-weight: 900;
+    max-width: 800px;
+    margin: 15px auto;
+    margin-bottom: 20px;
+    
+    
+}
+.heroBtn1{
+    height: 40px;
+    width: 180px;
+    border-radius: 25px;
+    background-color: #00000040;
+    backdrop-filter: blur(4px);
+    color: #ffffff;
+    border-color: #ffffff;
+    font-size: 20px;
+    font-weight: 700;
+    margin-right: 30px;
+}
+.heroBtn2{
+height: 40px;
+    width: 180px;
+    border-radius: 25px;
+    background: linear-gradient(45deg, #00C8A7 0%, #4445BC 50%, #C700A2 100%);
+    border: none;
+    font-size: 20px;
+    font-weight: 700;
+    color: #ffffff;
+}
+.partnerTitle{
+    text-align: center;
+    font-size: 40px;
+    font-weight: 700;
+    margin-top: 150px;
+    
+}
+.logoLine{
+    width: calc(100% - 100px);
+    height: 120px;
+    margin: 50px auto;
+    display: flex;
+    overflow-x: hidden;
+    gap: 100px;
+}
+.logoSlide{
+ display: flex;
+    gap: 100px;
+    animation: scroll 60s linear infinite;
+}
+@keyframes scroll {
+    from {
+        transform: translateX(-100%); /* Starts at the normal position */
+    }
+    to {
+        transform: translateX(100px); /* Moves left by its full width */
+    }
+}
+.logoLine img{
+    height: 90%;
+    width: auto;
+    flex-shrink: 0;
+}
+#arrangementer{
+    width: calc(100% - 100px);
+    margin: 0 auto;
+    margin-top: 200px;
+}
+.arrangementerTitle{
+    text-align: center;
+    font-size: 40px;
+    font-weight: 700;
+    margin-top: 150px;
+    position: sticky; /* This is the key property */
+    top: 50px; /* This is where the element will "stick" */
+}
+
+.sticky-container {
+    /* This height must be taller than the combined height of the sticky elements */
+    height: 215vh; /* Adjust this value to create enough space to scroll */
+    position: relative;
+}
+
+.image-group {
+    margin-top: 45px;
+    display: flex;
+    justify-content: center;
+    gap: 35px;
+    position: sticky; /* This is the key property */
+    top: 145px; /* This is where the element will "stick" */
+    
+}
+#image-group2{
+    top: 160px;
+}
+#image-group3{
+    top: 145px;
+}
+.stickyImg{
+    position: relative;
+}
+/* You can use a transition to make the stacking smoother */
+.image-group.stickyImg img {
+    height: auto;
+    width: 100%; /* Or whatever width you want */
+    transition: transform 0.5s ease-in-out;
+    border-radius: 15px;
+    display: block;
+}
+.stickyImg img{
+    border-radius: 6px;
+}
+
+.stickyImg h3 {
+    position: absolute; /* This pulls the h3 out of the normal document flow */
+    top: 76%; /* Places the top edge of the h3 in the middle of the container */
+    text-align: center;
+    transform: translate(0, -25%); /* This centers the h3 horizontally and vertically */
+    width: 100%;
+    z-index: 1; /* Ensures the h3 is on top of the image */
+    font-size: 40px;
+    font-family: 'Goldman', sans-serif;
+    font-weight: 400;
+     background-color: #e2d8e2; /* Your background color */
+  color: transparent;
+  text-shadow: 4px 0 8px rgba(255, 255, 255, 0.4); /* Shadow color: white with 50% opacity */
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+.arrBtn{
+    height: 40px;
+    width: 180px;
+    border-radius: 25px;
+    background-color: #00000040;
+    backdrop-filter: blur(4px);
+     display: flex;              /* make it a flexbox */
+    align-items: center;        /* vertical center */
+    justify-content: center;    /* horizontal center */
+    position: absolute; /* This pulls the h3 out of the normal document flow */
+    top: 88%; /* Places the top edge of the h3 in the middle of the container */
+    left: 50%; /* Places the left edge of the h3 in the middle of the container */
+    transform: translate(-50%, -15%); /* This centers the h3 horizontally and vertically */
+    z-index: 1; /* Ensures the h3 is on top of the image */
+     border-color: #ffffff;
+     border-width: 2px;
+     border-style: solid;
+}
+.arrBtn p{
+margin: 0;
+font-size: 16px;
+font-weight: 700;
+}
+#video{
+width: 100%;
+height: 95vh;
+background-image: url("images/videoImage.jpg");  
+background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+margin-top: 150px;
+}
+.vidContent{
+    width: calc(100% - 100px);
+    margin: 0 auto;
+    margin-top: 200px;
+}
+
+.vidTitle{
+    text-align: center;
+    font-size: 40px;
+    font-weight: 700;
+    padding-top: 75px;
+}
+.ytContainer{
+    width: 106.67vh;
+    height: 60vh;
+    margin: 0 auto;
+    margin-top: 50px;
+}
+.vidContent a{
+    color: white;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 700;
+    margin: 0 auto;
+    margin-top: 30px;
+    display: block;
+    width: 80%;
+    text-underline-offset: 5px;
+}
+#fester{
+    height: 30vh;
+    width: calc(100% - 100px);
+    margin: 0 auto;
+    align-items: center;
+  text-align: center;
+  display: flex;
+}
+.festercontainer{
+    width: 70%;
+    height: 50%;
+   display: flex;
+    margin: 0 auto;
+}
+.festcontent1{
+height: 100%;
+flex: 1;
+}
+.festcontent2{
+  height: 100%;
+  flex: 1; 
+}
+.festcontent3{
+    height: 100%;
+    flex: 1; 
+}
+.festcontent4{
+    height: 100%; 
+    flex: 1; 
+}
+.festnummer{
+    text-align: center;
+    font-size: 40px;
+    font-weight: 700;
+    padding-top: 40px;
+    font-family: 'Goldman', sans-serif;
+    font-weight: 400;
+     background-color: #e2d8e2; /* Your background color */
+  color: transparent;
+  text-shadow: 4px 0 8px rgba(255, 255, 255, 0.4); /* Shadow color: white with 50% opacity */
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+.festBeskrivelse{
+    font-size: 20px;
+    font-weight: 100;
+    padding-right: 20px;
+}
+.festLine{
+    width: 50%;
+    height: 3px;
+   background: linear-gradient(45deg, #00C8A7 0%, #4445BC 50%, #C700A2 100%);
+   margin-top: 10px;
+}
+#kunde{
+    height: 400px;
+    margin: 0 auto;
+}
+.kundeTitel{
+    text-align: center;
+    font-size: 40px;
+    font-weight: 700;
+    padding-top: 30px;
+}
+.testimonialContainer{
+    width: calc(100% - 100px);
+    margin: 0 auto;
+    height: 200px;
+    margin-top: 30px;
+    display: flex;
+    gap: 30px;
+    overflow: hidden;
+
+}
+.testimonial{
+    width: 500px;
+    height: 100%;
+    background: linear-gradient(45deg, #00C8A7 0%, #4445BC 50%, #C700A2 100%);
+    border-radius: 25px;
+}
+.testimonialContent{
+    background-color: #1a1a1ad9;
+    width: 493px;
+    backdrop-filter: blur(4px); /* Or any other background color for the inner content */
+    margin: 3px;
+    border-radius: 22px;
+    height: 97%;
+    position: relative;
+}
+.testimonialName{
+    padding-top: 20px;
+    padding-left: 20px;
+    font-size: 20px;
+    font-weight: 700;
+}
+.testimonialDesc{
+     padding-top: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: 16px;
+    font-weight: 400;
+}
+.stjernebox{
+    height: 20px;
+    width: 100%;
+    position: absolute;
+    bottom: 40px
+}
+.stjernebox h3{
+    font-size: 40px;
+    font-weight: 500;
+    padding-left: 20px;
+    margin-top: 0;
+}
+
+.kundeSlide{
+ display: flex;
+    gap: 30px;
+    animation: scroll 40s linear infinite;
+}
+@keyframes scroll {
+    from {
+        transform: translateX(-100%); /* Starts at the normal position */
+    }
+    to {
+        transform: translateX(30px); /* Moves left by its full width */
+    }
+}
+#booking{
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(135deg, #518C97 0%, #465794 50%, #724083 100%);
+    margin-top: 100px;
+    justify-content: center;
+    display: flex;
+}
+.bookingContent{
+    width: calc(100% - 100px);
+    height: calc(100% - 100px);
+    margin: 0 auto;
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+
+}
+.bookingLeft{
+    height: 100%;
+    flex-basis: 55%;
+    overflow: hidden;
+}
+
+.bookingTitle{
+    font-size: 40px;
+    font-weight: 700;
+    
+}
+.bookingSubTitle{
+    font-size: 24px;
+    font-weight: 700;
+    margin-top: 30px;
+}
+
+.bookingLine{
+    width: 40%;
+    height: 3px;
+   background: linear-gradient(45deg, #00C8A7 0%, #4445BC 50%, #C700A2 100%);
+   margin-top: 30px;
+}
+.bookingText{
+    height: 80%;
+    width: 100%;
+    margin-top: 75px;
+    display: flex;
+    flex-direction: column;
+}
+.bookingText1{
+    flex-grow: 1;
+    display: flex;
+    justify-content: space-between;
+}
+.bookingText2{
+    flex-grow: 1;
+   display: flex;
+   justify-content: space-between;
+}
+.bookingText3{
+    flex-grow: 1;
+    display: flex;
+    justify-content: space-between;
+}
+.bookingTextLeft{
+    height: 100%;
+    flex-basis: 10%;
+}
+.bookingTextLeft h1{
+    font-size: 96px;
+    font-weight: 700;
+    margin: 0;
+    padding: 0;
+    line-height: 96px;
+}
+.bookingTextRight h4{
+    font-size: 20px;
+    font-weight: 700;
+    margin: 0;
+    padding: 0;
+    line-height: 24px;
+}
+.bookingTextRight{
+    height: 100%;
+    flex-basis: 90%;
+}
+.bookingRight{
+    height: 100%;
+    flex-basis: 35%;
+    
+    display: flex;
+    align-items: center;
+
+}
+.formularContainer{
+    width: 100%;
+    height: fit-content;
+    
+
+}
+.inputContainer{
+    position: relative;
+    margin-bottom: 50px;
+}
+.inputContainer label{
+    font-size: 24px;
+    font-weight: 700;
+    position: absolute; /* Position the label relative to the container */
+  top: -18px; /* Adjust this value to move the label up */
+  left: 0; /* Adjust this to move it left/right */
+  width: 100%;
+  padding-left: 30px;
+
+}
+.nameInput{
+    background: none;
+    border: 2px solid white;
+    border-radius: 15px ;
+    width: 100%;
+    height: 60px;
+    border-top: 0.5px solid transparent; 
+}
+.nameInput::placeholder{
+    color: white;
+    padding-left: 30px;
+    font-size: 16px;
+}
+
+.inputContainer label::before {
+  content: '';
+  position: absolute;
+  top: 60%;
+  width: 7px; /* Adjust the length of the lines as needed */
+  height: 2px;
+  background: white;
+  transform: translateY(-50%);
+}
+.inputContainer label::after {
+  content: '';
+  position: absolute;
+  top: 60%;
+  width: 77%; /* Adjust the length of the lines as needed */
+  height: 2px;
+  background: white;
+  transform: translateY(-50%);
+}
+
+.inputContainer label::before {
+  left: 8px; /* Position the left line */
+}
+
+.inputContainer label::after {
+  right: 8px; /* Position the right line */
+}
+
+.twoinputsContainer{
+    display: flex;
+    width: 100%;
+    gap: 30px;
+}
+.shortInput{
+    background: none;
+    border: 2px solid white;
+    border-radius: 15px ;
+    width: 100%;
+    height: 60px;
+    border-top: 0.5px solid transparent; 
+}
+.shortInput::placeholder{
+    color: white;
+    padding-left: 30px;
+    font-size: 16px;
+}
+.inputRight{
+    width: 100%;
+}
+.inputLeft{
+    width: 100%;
+}
+
+#shortInput1 label::after{
+  width: 50%;
+}
+#shortInput2 label::after{
+  width: 40%;
+}
+#inputStor{
+
+}
+#inputStor input{
+height: 150px;
+}
+#inputStor label::after{
+    width: 60%;
+}
+.bigInput{
+    background: none;
+    border: 2px solid white;
+    border-radius: 15px ;
+    width: 100%;
+    height: 60px;
+    border-top: 0.5px solid transparent; 
+}
+.bigInput::placeholder{
+    color: white;
+    padding-left: 30px;
+    font-size: 16px;
+    vertical-align: top;
+}
+.inputBtn{
+    height: 40px;
+    width: 250px;
+    border-radius: 25px;
+    background-color: #00000040;
+    backdrop-filter: blur(4px);
+    color: #ffffff;
+    border-color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid white;
+    margin-left: auto;
+}
+.inputBtn p{
+   font-size: 20px;
+    font-weight: 700; 
+    text-align: center;
+}
+#blogs{
+    background-image: url("images/blogbaggrund.png"); 
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    padding-bottom: 200px;
+}
+.blogContainer{
+    width: calc(100% - 100px);
+    height: fit-content;
+    margin: 0 auto;
+}
+.blogContent{
+    width: 100%;
+    margin: 0 auto;
+    padding-top: 100px;
+    display: flex;
+    gap: 50px;
+    position: sticky;
+    top: 0;
+}
+.blogImg{
+    flex-basis: 550px;
+    height: 100%;
+    
+}
+.stickyImg2 img{
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    margin-bottom: 200px;
+    display: block;
+}
+.blogText{
+    flex-basis: 60%;
+    height: 100%;
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    position: sticky; /* Make the text column sticky */
+    top: 150px;
+}
+.progressbar{
+   width: 450px; 
+   height: 10px;
+    background: linear-gradient(135deg, #436f77 0%, #3b4670 50%, #664172 100%);
+   border-radius: 25px;
+}
+.progressbarInner{
+    height: 100%;
+    width: 10%;
+    border-radius: 25px;
+    background: linear-gradient(45deg, #00C8A7 0%, #4445BC 50%, #C700A2 100%);
+}
+.blogTextContent{
+    width: 100%;
+    height: fit-content;
+}
+.blogTitel{
+    font-size: 96px;
+    font-weight: 600;
+}
+.tagContainer{
+    width: 100%;
+    height: 35px;
+    display: flex;
+    gap: 10px;
+}
+.tag{
+    height: 100%;
+    
+    width: 120px;
+    
+    border-radius: 25px;
+    background-color: #00000040;
+    backdrop-filter: blur(4px);
+     display: flex;              /* make it a flexbox */
+  align-items: center;        /* vertical center */
+  justify-content: center; 
+}
+.tag p{
+margin: 0;
+font-size: 16px;
+font-weight: 400;
+}
+.blogSnippet{
+    font-size: 32px;
+    margin-top: 50px;
+    font-weight: 400;
+}
+.blogBtn{
+     width: 200px;
+    height: 35px;
+     background: linear-gradient(45deg, #00C8A7 0%, #4445BC 50%, #C700A2 100%);
+    border-radius: 25px;
+    margin-right: 10px;
+    display: flex;              /* make it a flexbox */
+  align-items: center;        /* vertical center */
+  justify-content: center;
+  margin-top: 30px;
+}
+.blogBtn p{
+    margin: 0;
+font-size: 20px;
+font-weight: 400;
+}
+.stickycontainer{
+height: 310vh; /* Example: a large height to allow scrolling */
+  
+}
+.stickyImg2 {
+  position: sticky;
+  /* Adjust the width as needed. */
+  
+
+}
+
+.stickyImg2:nth-child(1) {
+  top: 100px;
+}
+
+.stickyImg2:nth-child(2) {
+  top: 110px; /* Adjust this value to control the offset between images. */
+}
+
+.stickyImg2:nth-child(3) {
+  top: 120px;
+}
+
+.stickyImg2:nth-child(4) {
+  top: 130px;
+}
+
+.stickyImg2:nth-child(5) {
+  top: 140px;
+}
+
+.blogBottomTitle{
+     font-size: 96px;
+    font-weight: 600;
+    text-align: center;
+    width: 60%;
+    margin: 0 auto;
+    margin-top: 200px;
+    
+}
+.BlogBottomSubTitle{
+    font-size: 32px;
+    width: 63%;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 50px;
+    font-weight: 400;
+}
+.blogBottomBtn{
+     width: 200px;
+    height: 35px;
+     background: linear-gradient(45deg, #00C8A7 0%, #4445BC 50%, #C700A2 100%);
+    border-radius: 25px;
+    margin-right: 10px;
+    display: flex;              /* make it a flexbox */
+  align-items: center;        /* vertical center */
+  justify-content: center;
+  margin: 0px auto;
+  margin-top: 30px;
+  
+}
+.blogBottomBtn p{
+    margin: 0;
+font-size: 20px;
+font-weight: 400;
+}
+footer{
+    width: 100%;
+    height: fit-content;
+    background-color: #2a2a2a;
+    background-size: cover;
+    padding-bottom: 5rem;
+    
+}
+.footerContainerTop{
+    width: calc(100% - 100px);
+    height: 80%;
+    margin: 0 auto;
+    display: flex;
+}
+.footerContainerBottom{
+    width: calc(100% - 100px);
+    height: 20%;
+    margin: 0 auto;
+    
+}
+.topContainerLeft{
+    flex-grow: 1;
+    height: 100%;
+}
+
+.topContainerMid{
+    flex-grow: 1;
+    height: 100%;
+}
+
+.topContainerRight{
+    flex-grow: 1;
+    height: 100%;
+}
+.linkContainer{
+    margin-top: 5rem;
+}
+.linkContainer ul{
+    list-style-type: none;
+    margin: 0 0 2.875rem;
+}
+
+.linkContainer ul li{
+    display: inline-block;
+    padding-right: 1.5rem;
+    margin-bottom: .5rem;
+    font-size: 18px;
+}
+.linkContainer ul li a{
+    color: #fff;
+    letter-spacing: .12em;
+    line-height: 140%;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+.topContainerLeft h2{
+    font-weight: 70;
+    font-size: 36px;
+    line-height: 40px;
+    text-transform: uppercase;
+    font-family: 'Goldman', sans-serif; 
+    margin-bottom: 2.875rem;
+}
+.topContainerLeft form{
+    border-bottom: 2px solid #fff;
+    max-width: 250px;
+    position: relative;
+}
+.topContainerLeft form input{
+    background: none;
+    border: none;
+    line-height: 33px;
+    padding-left: 0;
+    width: 100%;
+    padding-right: 30px;
+    font-size: 14px;
+    outline: none;
+    color: #fff;
+    padding-bottom: 8px;
+}
+.topContainerLeft form input::placeholder{
+    color: #fcfcfc;
+}
+.topContainerLeft form button{
+    background: none;
+    border: none;
+    position: absolute;
+    right: 0;
+    z-index: 1;
+    line-height: 33px;
+    cursor: pointer;
+}
+.topContainerLeft form button img{
+    overflow-clip-margin: content-box;
+    overflow: clip;
+}
+.topContainerRight{
+    text-align: right;
+}
+.topContainerRight address{
+    font-weight: 400;
+    color: #fff;
+    letter-spacing: .12em;
+    line-height: 140%;
+    text-transform: uppercase;
+}
+.topContainerRight address h2{
+     font-weight: 70;
+    font-size: 36px;
+    line-height: 40px;
+    text-transform: uppercase;
+    font-family: 'Goldman', sans-serif; 
+    margin-bottom: 2.875rem;
+    margin-top: 5rem;
+}
+.topContainerRight address p{
+    margin-bottom: 5px;
+}
