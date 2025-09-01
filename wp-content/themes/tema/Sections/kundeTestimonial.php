@@ -1,0 +1,98 @@
+<section id="kunde">
+<div class="testimonialContainer">
+    <div class="kundeSlide">
+    <div class="testimonial">
+        <div class="testimonialContent">
+            <h3 class="testimonialName">Niels Nielsen</h3>
+            <p class="testimonialDesc">Det her det var satme fed jeiner. Book dem i sværger. dette var fedt for firmafesten</p>
+            <div class="stjernebox">
+                <h3> ★ ★ ★ ★ ☆</h3>
+            </div>
+        </div>
+    </div>
+    <div class="testimonial">
+        <div class="testimonialContent">
+            <h3 class="testimonialName">Niels Nielsen</h3>
+            <p class="testimonialDesc">Det her det var satme fed jeiner. Book dem i sværger. dette var fedt for firmafesten</p>
+            <div class="stjernebox">
+                <h3> ★ ★ ★ ★ ☆</h3>
+            </div>
+        </div>
+    </div>
+    <div class="testimonial">
+        <div class="testimonialContent">
+            <h3 class="testimonialName">Niels Nielsen</h3>
+            <p class="testimonialDesc">Det her det var satme fed jeiner. Book dem i sværger. dette var fedt for firmafesten</p>
+            <div class="stjernebox">
+                <h3> ★ ★ ★ ★ ☆</h3>
+            </div>
+        </div>
+    </div>
+    <div class="testimonial">
+        <div class="testimonialContent">
+            <h3 class="testimonialName">Niels Nielsen</h3>
+            <p class="testimonialDesc">Det her det var satme fed jeiner. Book dem i sværger. dette var fedt for firmafesten</p>
+            <div class="stjernebox">
+                <h3> ★ ★ ★ ★ ☆</h3>
+            </div>
+        </div>
+    </div>
+    <div class="testimonial">
+        <div class="testimonialContent">
+            <h3 class="testimonialName">Niels Nielsen</h3>
+            <p class="testimonialDesc">Det her det var satme fed jeiner. Book dem i sværger. dette var fedt for firmafesten</p>
+            <div class="stjernebox">
+                <h3> ★ ★ ★ ★ ☆</h3>
+            </div>
+        </div>
+    </div>
+    </div>
+        <div class="kundeSlide">
+    <div class="testimonial">
+        <div class="testimonialContent">
+            <h3 class="testimonialName">Niels Nielsen</h3>
+            <p class="testimonialDesc">Det her det var satme fed jeiner. Book dem i sværger. dette var fedt for firmafesten</p>
+            <div class="stjernebox">
+                <h3> ★ ★ ★ ★ ☆</h3>
+            </div>
+        </div>
+    </div>
+    <div class="testimonial">
+        <div class="testimonialContent">
+            <h3 class="testimonialName">Niels Nielsen</h3>
+            <p class="testimonialDesc">Det her det var satme fed jeiner. Book dem i sværger. dette var fedt for firmafesten</p>
+            <div class="stjernebox">
+                <h3> ★ ★ ★ ★ ☆</h3>
+            </div>
+        </div>
+    </div>
+    <div class="testimonial">
+        <div class="testimonialContent">
+            <h3 class="testimonialName">Niels Nielsen</h3>
+            <p class="testimonialDesc">Det her det var satme fed jeiner. Book dem i sværger. dette var fedt for firmafesten</p>
+            <div class="stjernebox">
+                <h3> ★ ★ ★ ★ ☆</h3>
+            </div>
+        </div>
+    </div>
+    <div class="testimonial">
+        <div class="testimonialContent">
+            <h3 class="testimonialName">Niels Nielsen</h3>
+            <p class="testimonialDesc">Det her det var satme fed jeiner. Book dem i sværger. dette var fedt for firmafesten</p>
+            <div class="stjernebox">
+                <h3> ★ ★ ★ ★ ☆</h3>
+            </div>
+        </div>
+    </div>
+    <div class="testimonial">
+        <div class="testimonialContent">
+            <h3 class="testimonialName">Niels Nielsen</h3>
+            <p class="testimonialDesc">Det her det var satme fed jeiner. Book dem i sværger. dette var fedt for firmafesten</p>
+            <div class="stjernebox">
+                <h3> ★ ★ ★ ★ ☆</h3>
+            </div>
+        </div>
+    </div>
+    </div>
+</div>
+</section>
