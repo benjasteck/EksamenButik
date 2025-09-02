@@ -71,7 +71,7 @@ $HeaderImage = get_field("forside_header_billede");
 </div>
 
 <style>
-header {
+#header {
     background-image: url('<?php echo esc_url($HeaderImage["url"]); ?>');}
 </style>
 </body>
