@@ -21,7 +21,6 @@
 
 <?php
 $HeaderImage = get_field("forside_header_billede");
-var_dump($HeaderImage);
 ?>
 
 
