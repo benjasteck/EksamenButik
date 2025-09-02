@@ -1,3 +1,7 @@
+
+
+<section id="partnere">
+<h2 class="partnerTitle">Partnere</h2>
 <?php
 $args = array(
     'post_type' => 'partner', // Replace 'partner' with your actual custom post type name
@@ -8,9 +12,6 @@ $args = array(
 
 $partner_logos = get_posts($args);
 ?>
-
-<section id="partnere">
-<h2 class="partnerTitle">Partnere</h2>
 <div class="logoSlide">
             <?php
             if ($partner_logos) {
