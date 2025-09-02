@@ -1,3 +1,8 @@
+<?php
+$videoBaggrund = get_field("video_background");
+
+?>
+
 <section id="video">
 <div class="vidContent">
 <h2 class="vidTitle">Video</h2>
@@ -31,4 +36,8 @@
         <div class="festLine"></div>
     </div>
 </div>
+<style>
+#video {
+    background-image: url('<?php echo esc_url($videoBaggrund["url"]); ?>');}
+</style>
 </section>
