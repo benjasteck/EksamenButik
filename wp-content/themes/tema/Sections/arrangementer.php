@@ -69,7 +69,7 @@ $byfest = get_field("arrangement_img9");
             </div>
         </div>
         <div class="stickyImg">
-            <img src="'<?php echo esc_url($fodselsdagfest["url"]); ?>' alt="">
+            <img src='<?php echo esc_url($fodselsdagfest["url"]); ?>' alt="">
             <h3>fødselsdagfest</h3>
             <div class="arrBtn">
                 <p>Se Mere</p>
