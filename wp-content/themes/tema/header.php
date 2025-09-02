@@ -20,7 +20,7 @@
 
 
 <?php
-
+$HeaderImage = get_field("forside_header_billede");
 ?>
 
 
@@ -60,7 +60,7 @@
 <div class="main-container">
 <div class="main-content-wrapper">
   <h1 class="main-heading">B O O K &nbsp; &nbsp; T H E  &nbsp; &nbsp; B E A T</h1>
-  <p class="subtext">All til fest, et sted</p>
+  <p class="subtext">Alt til fest, et sted</p>
   <p class="description">Alt til fest, ét sted. Fra pumpende bas og lys, der fylder rummet, til DJs, der kender præcis hvilke tracks der får dansegulvet til at eksplodere. Om du bare mangler højtalere, eller vil have hele pakken med DJ, lyd og lys. Din fest, dit vibe, vi leverer resten.</p>
   <div class="button-wrapper">
     <button class="heroBtn1">Fest Typer</button>
@@ -72,6 +72,9 @@
 
 
 </body>
-
+<style>
+header {
+    background-image: url('<?php echo esc_url($HeaderImage["url"]); ?>');}
+</style>
  <?php endwhile; ?>
 <?php endif; ?>
