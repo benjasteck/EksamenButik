@@ -26,22 +26,19 @@ $partner_logos = get_posts($args);
             ?>
         </div>
     <div class="logoSlide">
-    <img src="images/logo-melpe-branco.png" alt="">
-    <img src="images/leo-hvid.png" alt="">
-    <img src="images/skat-hvid.png" alt="">
-    <img src="images/nordic-event.png" alt="">
-    <img src="images/klarlund-logo.png" alt="">
-    <img src="images/maersk-group-logo-hvid.png" alt="">
-    <img src="images/reme-1000.png" alt="">
-    <img src="images/telenor-white-logo-300x152-1.png" alt="">
-    <img src="images/novo-hvid.png" alt="">
-    <img src="images/tdc-hvid.png" alt="">
-    <img src="images/pandora-logo.png" alt="">
-    <img src="images/dtu-white-2.png" alt="">
-    <img src="images/sdu-hvid.png" alt="">
-    <img src="images/rigshospitalet-hvid.png" alt="">
-    <img src="images/cowi-hvid.png" alt="">
-    <img src="images/danske-bank-hvid.png" alt="">
+    <?php
+            // Repeat the loop for the second logo slide if you want the continuous effect
+            if ($partner_logos) {
+                foreach ($partner_logos as $post) {
+                    setup_postdata($post);
+                    $logo = get_field('partner_logo_image');
+                    if ($logo) {
+                        echo '<img src="' . esc_url($logo['url']) . '" alt="' . esc_attr($logo['alt']) . '" />';
+                    }
+                }
+                wp_reset_postdata();
+            }
+            ?>
     </div>
 </div>
 </section>
