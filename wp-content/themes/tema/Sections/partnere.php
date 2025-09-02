@@ -11,7 +11,7 @@
         );
 
         $partner_logos = get_posts($args);
-        var_dump($args);
+        var_dump($partner_logos);
         if ($partner_logos) {
             // First logoSlide div
             echo '<div class="logoSlide">';
