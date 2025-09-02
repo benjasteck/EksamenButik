@@ -15,11 +15,8 @@
             echo '<div class="logoSlide">';
             foreach ($partner_logos as $post) {
                 setup_postdata($post);
-
-                // --- START OF DEBUGGING CODE ---
                 $logo = get_field('partner_logo_img');
-                var_dump($logo);
-                // --- END OF DEBUGGING CODE ---
+                
 
                 if ($logo) {
                     echo '<img src="' . esc_url($logo['url']) . '" alt="' . esc_attr($logo['alt']) . '" />';
@@ -32,8 +29,9 @@
             echo '<div class="logoSlide">';
             foreach ($partner_logos as $post) {
                 setup_postdata($post);
-                // Correct field name here
-                $logo = get_field('partner_logo_img'); 
+                $logo = get_field('partner_logo_img');
+                
+
                 if ($logo) {
                     echo '<img src="' . esc_url($logo['url']) . '" alt="' . esc_attr($logo['alt']) . '" />';
                 }
