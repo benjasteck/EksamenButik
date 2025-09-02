@@ -11,7 +11,9 @@
         );
 
         $partner_logos = get_posts($args);
-
+ if (empty($partner_logos)) {
+            echo '<h3>No partner posts were found. Check your post type name or if posts have been created.</h3>';
+        }
         if ($partner_logos) {
             // First logoSlide div
             echo '<div class="logoSlide">';
