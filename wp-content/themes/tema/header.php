@@ -71,11 +71,11 @@ var_dump($HeaderImage);
 </div>
 </div>
 
-
-</body>
 <style>
 header {
     background-image: url('<?php echo esc_url($HeaderImage["url"]); ?>');}
 </style>
+</body>
+
  <?php endwhile; ?>
 <?php endif; ?>
