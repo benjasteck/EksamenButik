@@ -1,9 +1,14 @@
+<?php
+$bryllupfest = get_field("arrangement_img1");
+?>
+
+
 <section id="arrangementer">
     <div class="sticky-container">
         <h2 class="arrangementerTitle">Arrangementer</h2>
     <div class="image-group">
         <div class="stickyImg">
-            <img src="images/bryllupfest.jpg" alt="">
+            <img src='<?php echo esc_url($bryllupfest["url"]); ?>' alt="">
             <h3>Bryllup Fest</h3>
             <div class="arrBtn">
                 <p>Se Mere</p>
