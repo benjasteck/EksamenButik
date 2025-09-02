@@ -700,8 +700,7 @@ height: 150px;
     font-weight: 700; 
     text-align: center;
 }
-#blogs{
-    background-image: url("images/blogbaggrund.png"); 
+#blogs{ 
     width: 100%;
     background-size: cover;
     background-position: center;

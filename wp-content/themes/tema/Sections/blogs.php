@@ -1,3 +1,7 @@
+<?php
+$blogBaggrund = get_field("blog_background");
+?>
+
 <section id="blogs">
     <div class="blogContainer">
             <div class="blogContent">
@@ -43,4 +47,8 @@
     <div class="blogBottomBtn">
         <p>BOOK TID</p>
     </div>
+    <style>
+#blogs {
+    background-image: url('<?php echo esc_url($blogBaggrund["url"]); ?>');}
+</style>
 </section>
