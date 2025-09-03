@@ -1,3 +1,4 @@
+
 <?php
 $blogBaggrund = get_field("blog_background");
 ?>

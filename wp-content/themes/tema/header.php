@@ -15,8 +15,7 @@
 
 
 <body <?php body_class() ?>>
-    <?php if(have_posts()): ?>
-    <?php while(have_posts()): the_post() ?>
+ 
 
 
 <?php
@@ -80,6 +79,3 @@ $ForsideHeaderTekst = get_field("forside_header_tekst");
     background-image: url('<?php echo esc_url($HeaderImage["url"]); ?>');}
 </style>
 </body>
-
- <?php endwhile; ?>
-<?php endif; ?>
