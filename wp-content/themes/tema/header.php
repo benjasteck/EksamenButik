@@ -36,6 +36,15 @@ if( $link ):
     $link_url = $link['url'];
     $link_title = $link['title'];
     $link_target = $link['target'] ? $link['target'] : '_self';
+    endif; 
+
+    if( $link2 ): 
+        // Uddrag URL, titel og target fra array'et
+        $link2_url = $link2['url'];
+        $link2_title = $link2['title'];
+        $link2_target = $link2['target'] ? $link2['target'] : '_self';
+        
+    
 ?>
     
 <?php endif; ?>
@@ -79,8 +88,8 @@ if( $link ):
   <p class="subtext"><?php echo($ForsideHeaderUndertitel);?></p>
   <p class="description"><?php echo($ForsideHeaderTekst);?></p>
   <div class="button-wrapper">
-    <button class="heroBtn1"href="<?php echo esc_url( $link_url ); ?>" target="<?php echo esc_attr( $link_target ); ?>"><?php echo esc_html( $link_title ); ?></button>
-    <button class="heroBtn2">Book Tid</button>
+    <a class="heroBtn1"href="<?php echo esc_url( $link_url ); ?>" target="<?php echo esc_attr( $link_target ); ?>"><?php echo esc_html( $link_title ); ?></a>
+    <a class="heroBtn2"href="<?php echo esc_url( $link2_url ); ?>" target="<?php echo esc_attr( $link2_target ); ?>"><?php echo esc_html( $link2_title ); ?></a>
   </div>
 </div>
 </div>
