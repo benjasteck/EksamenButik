@@ -1,5 +1,15 @@
 <?php
 $videoBaggrund = get_field("video_background");
+$FestType1Titel = get_field("festtype1_titel");
+$FestType1Undertitel = get_field("festtype1_undertitel");
+$FestType2Titel = get_field("festtype2_titel");
+$FestType2Undertitel = get_field("festtype2_undertitel");
+$FestType3Titel = get_field("festtype3_titel");
+$FestType3Undertitel = get_field("festtype3_undertitel");
+$FestType4Titel = get_field("festtype4_titel");
+$FestType4Undertitel = get_field("festtype4_undertitel");
+
+
 
 ?>
 
@@ -16,23 +26,23 @@ $videoBaggrund = get_field("video_background");
 <section id="fester">
 <div class="festercontainer">
     <div class="festcontent1">
-        <h2 class="festnummer">3476</h2>
-        <p class="festBeskrivelse">Privatfester siden 1725</p>
+    <h2 class="festnummer"><?php echo($FestType1Titel); ?></h2>
+        <p class="festBeskrivelse"> <?php echo($FestType1Undertitel);?></p>
         <div class="festLine"></div>
     </div>
     <div class="festcontent2">
-        <h2 class="festnummer">4235</h2>
-        <p class="festBeskrivelse">Privatfester siden 1725</p>
+    <h2 class="festnummer"><?php echo($FestType2Titel); ?></h2>
+    <p class="festBeskrivelse"> <?php echo($FestType2Undertitel);?></p>
         <div class="festLine"></div>
     </div>
     <div class="festcontent3">
-        <h2 class="festnummer">4679</h2>
-        <p class="festBeskrivelse">Privatfester siden 1725</p>
+    <h2 class="festnummer"><?php echo($FestType3Titel); ?></h2>
+    <p class="festBeskrivelse"> <?php echo($FestType3Undertitel);?></p>
         <div class="festLine"></div>
     </div>
     <div class="festcontent4">
-        <h2 class="festnummer">5372</h2>
-        <p class="festBeskrivelse">Privatfester siden 1725</p>
+    <h2 class="festnummer"><?php echo($FestType4Titel); ?></h2>
+    <p class="festBeskrivelse"> <?php echo($FestType4Undertitel);?></p>
         <div class="festLine"></div>
     </div>
 </div>

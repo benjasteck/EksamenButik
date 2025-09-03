@@ -8,6 +8,15 @@ $ungdomfest = get_field("arrangement_img6");
 $bornefest = get_field("arrangement_img7");
 $fodselsdagfest = get_field("arrangement_img8");
 $byfest = get_field("arrangement_img9");
+$bryllupfesttekst = get_field("arrangement_titel1");
+$firmafesttekst = get_field("arrangement_titel2");
+$konfirmationfesttekst = get_field("arrangement_titel3");
+$gymnasiefesttekst = get_field("arrangement_titel4");
+$efterskolefesttekst = get_field("arrangement_titel5");
+$ungdomfesttekst = get_field("arrangement_titel6");
+$bornefesttekst = get_field("arrangement_titel7");
+$fodselsdagfesttekst = get_field("arrangement_titel8");
+$byfesttekst = get_field("arrangement_titel9");
 ?>
 
 
@@ -17,21 +26,21 @@ $byfest = get_field("arrangement_img9");
     <div class="image-group">
         <div class="stickyImg">
             <img src='<?php echo esc_url($bryllupfest["url"]); ?>' alt="">
-            <h3>Bryllup Fest</h3>
+            <h3><?php echo($bryllupfesttekst); ?></h3>
             <div class="arrBtn">
                 <p>Se Mere</p>
             </div>
         </div>
         <div class="stickyImg">
             <img src='<?php echo esc_url($firmafest["url"]); ?>' alt="">
-            <h3>Firma Fest</h3>
+            <h3><?php echo($firmafesttekst); ?></h3>
             <div class="arrBtn">
                 <p>Se Mere</p>
             </div>
         </div>
         <div class="stickyImg">
             <img src='<?php echo esc_url($konfirmationfest["url"]); ?>' alt="">
-            <h3>Konfirmation Fest</h3>
+            <h3><?php echo($konfirmationfesttekst); ?></h3>
             <div class="arrBtn">
                 <p>Se Mere</p>
             </div>
@@ -40,21 +49,21 @@ $byfest = get_field("arrangement_img9");
     <div class="image-group" id="image-group2">
         <div class="stickyImg">
            <img src='<?php echo esc_url($gymnasiefest["url"]); ?>' alt=""> 
-           <h3>Gymnasie Fest</h3>
+           <h3><?php echo($gymnasiefesttekst); ?></h3>
             <div class="arrBtn">
                 <p>Se Mere</p>
             </div>
         </div>
         <div class="stickyImg">
            <img src='<?php echo esc_url($efterskolefest["url"]); ?>' alt=""> 
-           <h3>Efterskole Fest</h3>
+           <h3><?php echo($efterskolefesttekst); ?></h3>
             <div class="arrBtn">
                 <p>Se Mere</p>
             </div>
         </div>
         <div class="stickyImg">
            <img src='<?php echo esc_url($ungdomfest["url"]); ?>' alt=""> 
-           <h3>Ungdoms Fest</h3>
+           <h3><?php echo($ungdomfesttekst); ?></h3>
             <div class="arrBtn">
                 <p>Se Mere</p>
             </div>
@@ -63,21 +72,21 @@ $byfest = get_field("arrangement_img9");
     <div class="image-group" id="image-group3">
         <div class="stickyImg">
             <img src='<?php echo esc_url($bornefest["url"]); ?>' alt="">
-            <h3>Børne Disco</h3>
+            <h3><?php echo($bornefesttekst); ?></h3>
             <div class="arrBtn">
                 <p>Se Mere</p>
             </div>
         </div>
         <div class="stickyImg">
             <img src='<?php echo esc_url($fodselsdagfest["url"]); ?>' alt="">
-            <h3>fødselsdagfest</h3>
+            <h3><?php echo($fodselsdagfesttekst); ?></h3>
             <div class="arrBtn">
                 <p>Se Mere</p>
             </div>
         </div>
         <div class="stickyImg">
             <img src='<?php echo esc_url($byfest["url"]); ?>' alt="">
-            <h3>Byfest</h3>
+            <h3><?php echo($byfesttekst); ?></h3>
             <div class="arrBtn">
                 <p>Se Mere</p>
             </div>
