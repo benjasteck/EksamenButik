@@ -13,10 +13,3 @@
 wp-content/themes/twenty*/**
 wp-content/themes/index.php
 wp-content/plugins/index.php
-
-# Ignore plugin, uploads, and cache folders
-/wp-content/plugins/
-/wp-content/uploads/
-/wp-content/cache/
-/wp-content/upgrade/
-/wp-content/languages/
