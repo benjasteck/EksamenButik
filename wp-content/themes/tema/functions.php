@@ -14,7 +14,7 @@ function handle_simple_form_submission() {
 	$Fornavn = isset( $_POST['fornavn'] ) ? sanitize_text_field( $_POST['fornavn'] ) : '';
     $Efternavn  = isset( $_POST['efternavn'] ) ? sanitize_text_field( $_POST['efternavn'] ) : '';
     $Alder      = isset( $_POST['alder'] ) ? sanitize_text_field( $_POST['alder'] ) : '';
-    $Bopæl     = isset( $_POST['bopæl'] ) ? sanitize_text_field( $_POST['bopæl'] ) : '';
+    $Bopæl     = isset( $_POST['bopael'] ) ? sanitize_text_field( $_POST['bopael'] ) : '';
 
 
 	$subject ="Tak for at besvare vores spørgeskema";

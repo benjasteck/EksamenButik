@@ -13,8 +13,8 @@
     <label for="alder">Alder:</label><br>
     <input type="alder" id="alder" name="alder"><br><br>
 
-    <label for="bopæl">Bopæl:</label><br>
-    <input type="bopæl" id="bopæl" name="bopæl"><br><br>
+    <label for="bopael">Bopæl:</label><br>
+    <input type="bopael" id="bopael" name="bopael"><br><br>
 
 
     
