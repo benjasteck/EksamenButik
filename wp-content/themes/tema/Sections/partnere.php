@@ -1,6 +1,10 @@
+<?php
+$PartnerTitel = get_field("partner_title");
+?>
+
 
 <section id="partnere">
-    <h2 class="partnerTitle">Partnere</h2>
+    <h2 class="partnerTitle"><?php echo($PartnerTitel);?></h2>
     <div class="logoLine">
         <?php
         $args = array(
