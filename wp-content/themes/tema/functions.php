@@ -31,3 +31,15 @@ Med venlig hilsen,
 WaveForm
 ";
 }
+
+function mytheme_enqueue_scripts() {
+    // Register and enqueue your custom JS file
+    wp_enqueue_script(
+        'mytheme-js', // Handle (unique ID)
+        get_template_directory_uri() . '/js/loadText.js', // File path
+        array('jquery'), // Dependencies (optional)
+        filemtime(get_template_directory() . '/js/loadText.js'), // Version (good for cache-busting)
+        true // Load in footer (true) or header (false)
+    );
+}
+add_action('wp_enqueue_scripts', 'mytheme_enqueue_scripts');
