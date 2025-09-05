@@ -10,6 +10,7 @@ function disable_gutenberg() {
 }
 add_action('init', 'disable_gutenberg');
 
+
 function handle_simple_form_submission() {
 	$Fornavn = isset( $_POST['fornavn'] ) ? sanitize_text_field( $_POST['fornavn'] ) : '';
     $Efternavn  = isset( $_POST['efternavn'] ) ? sanitize_text_field( $_POST['efternavn'] ) : '';
@@ -31,6 +32,7 @@ Med venlig hilsen,
 WaveForm
 ";
 }
+
 
 function mytheme_enqueue_scripts() {
     // Register and enqueue your custom JS file

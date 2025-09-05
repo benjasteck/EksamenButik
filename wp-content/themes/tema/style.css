@@ -724,7 +724,7 @@ height: 150px;
 .blogImg{
     flex-basis: 550px;
     height: 100%;
-    
+    position: relative;
 }
 .stickyImg2 img{
     width: 100%;
@@ -739,7 +739,7 @@ height: 150px;
     margin-top: 50px;
     display: flex;
     align-items: center;
-    position: sticky; /* Make the text column sticky */
+    
     top: 150px;
 }
 .progressbar{
@@ -807,19 +807,18 @@ font-size: 20px;
 font-weight: 400;
 }
 .stickycontainer{
-height: 310vh; /* Example: a large height to allow scrolling */
+height: 100vh; /* Example: a large height to allow scrolling */
+
   
 }
 .stickyImg2 {
-  position: sticky;
+  
   /* Adjust the width as needed. */
   
 
 }
 
-.stickyImg2:nth-child(1) {
-  top: 100px;
-}
+
 
 .stickyImg2:nth-child(2) {
   top: 110px; /* Adjust this value to control the offset between images. */
@@ -989,4 +988,12 @@ footer{
 }
 .topContainerRight address p{
     margin-bottom: 5px;
+}
+.hide-text {
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out; /* Optional: for a smooth fade-in effect */
+}
+
+.show-text {
+    opacity: 1;
 }
