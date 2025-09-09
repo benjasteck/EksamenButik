@@ -4,7 +4,7 @@ $blogBaggrund = get_field("blog_background");
 ?>
 
 <section id="blogs">
-    <div class="blogContainer">
+     <div class="blogContainer">
 	<?php if(have_posts()): ?>
         <?php
         $post_counter = 1; 
@@ -63,6 +63,7 @@ $blogBaggrund = get_field("blog_background");
           ?>  
                                        
 		<?php endwhile; ?>
+		
 	<?php endif; ?>
 </div>
     <h1 class="blogBottomTitle">Vi klarer alt det praktiske og tekniske</h1>
