@@ -4,7 +4,7 @@
     <meta name="viewport" content="with=device-width, initial-scale=1.0">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <link rel="stylesheet" href="style.css">
+   
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
@@ -54,29 +54,29 @@ if( $link ):
 <nav>
    <div class="navLeft">
     <div class="logo">
-        <img src="images/logo.png" alt="">
+        <img src="" alt="">
     </div>
    </div> 
    <div class="navMid">
     <div class="navBtn selected">
-        <p>Hjem</p>
+        <a>Hjem</a>
     </div>
     <div class="navBtn">
-        <p>Arrangement</p>
+        <a>Arrangement</a>
     </div>
     <div class="navBtn">
-        <p>DJs</p>
+        <a>DJs</a>
     </div>
     <div class="navBtn">
-        <p>Udlejning</p>
+        <a>Udlejning</a>
     </div>
     <div class="navBtn">
-        <p>Om Os</p>
+        <a>Om Os</a>
     </div>
    </div>
    <div class="navRight">
     <div class="CTABtn1">
-        <p>Book Nu</p>
+        <a>Book Nu</a>
     </div>
    </div>
 </nav>
@@ -88,7 +88,10 @@ if( $link ):
   <p class="subtext"><?php echo($ForsideHeaderUndertitel);?></p>
   <p class="description"><?php echo($ForsideHeaderTekst);?></p>
   <div class="button-wrapper">
-    <a class="heroBtn1"href="<?php echo esc_url( $link_url ); ?>" target="<?php echo esc_attr( $link_target ); ?>"><?php echo esc_html( $link_title ); ?></a>
+    <div class="btnwrap">
+     <a class="heroBtn1"href="<?php echo esc_url( $link_url ); ?>" target="<?php echo esc_attr( $link_target ); ?>"><?php echo esc_html( $link_title ); ?></a>   
+    </div>
+    
     <a class="heroBtn2"href="<?php echo esc_url( $link2_url ); ?>" target="<?php echo esc_attr( $link2_target ); ?>"><?php echo esc_html( $link2_title ); ?></a>
   </div>
 </div>

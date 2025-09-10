@@ -14,9 +14,13 @@
 			$tags = get_the_tags();
             $image = get_field("blogimg");
             $post_id = "post" . $post_counter;
-            
+            $headerImage = get_field("subpage_header_img");
+            $headerTitel = get_field("subpageheader_titel");
 			?>
-			
+			<style>
+            #header {
+            background-image: url('<?php echo esc_url($headerImage["url"]); ?>');}
+            </style>
 
             
             <div class="blogContent"  id="<?php echo esc_attr($post_id); ?>">
