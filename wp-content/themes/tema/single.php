@@ -39,4 +39,9 @@
 		
 		<?php endwhile; ?>
 	<?php endif; ?>
+	<style>
+		.button-wrapper{
+			display: none;
+		}
+	</style>
 <?php get_footer() ?>
