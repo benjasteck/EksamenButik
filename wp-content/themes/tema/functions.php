@@ -62,6 +62,6 @@ add_action('wp_enqueue_scripts', 'mytheme_enqueue_scripts');
 
 
 function custom_excerpt_length($length) {
-    return 40; // Change 20 to the desired word count
+    return 30; // Change 20 to the desired word count
 }
 add_filter('excerpt_length', 'custom_excerpt_length');

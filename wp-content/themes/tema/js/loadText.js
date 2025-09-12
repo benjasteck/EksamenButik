@@ -37,13 +37,11 @@ document.addEventListener('DOMContentLoaded', function() {
                 if (entry.boundingClientRect.top > 0) {
                     newActivePost = currentPost;
                     foundNewActivePost = true;
-                    console.log(currentPost)
                 }
             } if (entry.boundingClientRect.top < 0) {
                 // When a post leaves the viewport from the top, select the one before it.
                 const currentPostId = parseInt(currentPost.id.replace('post', ''));
                 const previousPostId = currentPostId - 1;
-                console.log("prvid" + previousPostId)
                 if (previousPostId >= 1) {
                     newActivePost = document.getElementById(`post${previousPostId}`);
                     foundNewActivePost = true;

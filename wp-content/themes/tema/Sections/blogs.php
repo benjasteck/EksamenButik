@@ -36,7 +36,7 @@ $blogBaggrund = get_field("blog_background");
                 <div class="stickycontainer">
                     <div class="blogImg" style="top: <?php echo esc_attr($top_value); ?>px;">
                         <div class="stickyImg2">
-                            <img src="<?php echo esc_url($image["url"]); ?>" alt="">
+                            <img src="<?php echo esc_url($image["url"]); ?>" loading="lazy" alt="">
                         </div>
                     </div>
                 </div>

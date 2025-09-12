@@ -1,4 +1,11 @@
 <?php get_header() ?>
+
+    <?php 
+    $ForsideHeaderTitel = get_field("subpageheader_titel",  get_option( 'page_for_posts' ));
+    
+    ?>
+    <h1 class="main-heading-sub"><?php echo esc_html($ForsideHeaderTitel); ?></h1>
+
     <div class="blogContainer">
 	<?php if(have_posts()): ?>
         <?php
@@ -6,6 +13,27 @@
         $top_value = 10;
         ?>
 		<?php while(have_posts()): the_post() ?>
+
+
+        <?php
+    
+    $headerImageUrl = get_field("subpage_header_img",  get_option( 'page_for_posts' ));
+    
+    
+
+?>
+
+<style>
+#header {
+    background-image: url('<?php echo esc_url($headerImageUrl["url"]); ?>');
+    height: 66vh;
+    
+}
+.button-wrapper{
+    display: none;
+}
+</style>
+
 			<?php
 			$url = get_the_permalink();
 			$title = get_the_title();
@@ -14,13 +42,9 @@
 			$tags = get_the_tags();
             $image = get_field("blogimg");
             $post_id = "post" . $post_counter;
-            $headerImage = get_field("subpage_header_img");
-            $headerTitel = get_field("subpageheader_titel");
+            
 			?>
-			<style>
-            #header {
-            background-image: url('<?php echo esc_url($headerImage["url"]); ?>');}
-            </style>
+			
 
             
             <div class="blogContent"  id="<?php echo esc_attr($post_id); ?>">
@@ -64,5 +88,6 @@
 		<?php endwhile; ?>
 		
 	<?php endif; ?>
+            
 </div>
 <?php get_footer() ?>

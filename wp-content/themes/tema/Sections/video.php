@@ -49,6 +49,6 @@ $VideoTitel = get_field("video_titel");
 </div>
 <style>
 #video {
-    background-image: url('<?php echo esc_url($videoBaggrund["url"]); ?>');}
+    background-image: url('<?php echo esc_url($videoBaggrund["url"]); ?>' loading="lazy");}
 </style>
 </section>
