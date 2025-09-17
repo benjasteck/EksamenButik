@@ -90,7 +90,7 @@
 </div>
 <div class="osWrapper">
     <div class="osWrapperLeft">
-        <img src="<?php echo esc_url($image6["url"]); ?>" alt="">
+        <img src="<?php echo esc_url($image6["url"]); ?>" class="parralaxImg" alt="">
     </div>
     <div class="osWrapperRight">
         <h3 class="polytechTitel">Hvad gør vi</h3>

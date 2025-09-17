@@ -85,8 +85,8 @@ if( $link ):
 <div class="main-container">
 <div class="main-content-wrapper">
   <h1 class="main-heading"><?php echo($ForsideHeaderTitel);?></h1>
-  <p class="subtext"><?php echo($ForsideHeaderUndertitel);?></p>
-  <p class="description"><?php echo($ForsideHeaderTekst);?></p>
+  <h2 class="subtext"><?php echo($ForsideHeaderUndertitel);?></h2>
+  <h3 class="description"><?php echo($ForsideHeaderTekst);?></h3>
   <div class="button-wrapper">
     <div class="btnwrap">
      <a class="heroBtn1"href="<?php echo esc_url( $link_url ); ?>" target="<?php echo esc_attr( $link_target ); ?>"><?php echo esc_html( $link_title ); ?></a>   
