@@ -36,7 +36,7 @@ $blogBaggrund = get_field("blog_background");
                 <div class="stickycontainer">
                     <div class="blogImg" style="top: <?php echo esc_attr($top_value); ?>px;">
                         <div class="stickyImg2">
-                            <img src="<?php echo esc_url($image["url"]); ?>" loading="lazy" alt="">
+                            <img src="<?php echo esc_url($image["url"]); ?>" loading="lazy" alt="<?php echo $image ["alt"]?>">
                         </div>
                     </div>
                 </div>
@@ -78,7 +78,7 @@ $blogBaggrund = get_field("blog_background");
     <button onclick="smoothScroll(document.getElementById('blogContainer'))" class="upBtn">↑</button>
 </div>
     <h1 class="blogBottomTitle">Vi klarer alt det praktiske og tekniske</h1>
-    <h4 class="BlogBottomSubTitle">Forskning og flere studier viser at konventionel medicin oprindeligt brugt til andre lidelser kan hjælpe med at sulte kræft og i sidste ende slå kræftceller ihjel.</h4>
+    <h4 class="BlogBottomSubTitle">Til alle dine fester leverer vi det perfekte mobildiskotek. Med en professionel DJ bag pulten får du den helt rigtige musik og et imponerende lyd & lys show, der forvandler ethvert rum til en fest.</h4>
     <div class="blogBottomBtn">
         <p>BOOK TID</p>
     </div>
