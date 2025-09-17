@@ -33,10 +33,10 @@ body{
    
 }
 .container{
-    width: calc(100% - 100px);
-    height: 110px;
+    width: calc(100% - 20px);
+    height: 60px;
     margin: 0px auto;
-    padding-top: 50px;
+    padding-top: 20px;
 }
 nav{
     background-color: #25252540;
@@ -69,7 +69,9 @@ nav{
   align-items: center;       
   justify-content: center;
   cursor: pointer;
+  display: none;
 }
+
 .CTABtn1 p{
     margin: 0;
 font-size: 20px;
@@ -83,6 +85,21 @@ font-weight: 400;
     align-items: center;
 
 }
+.extendBtn{
+
+}
+.extendBtn button{
+    background: none;
+    border: none;
+    margin-right: 10px;
+    justify-content: center;
+    align-items: center;
+}
+.extendBtn button img{
+height: 100%;
+width: auto;
+margin-top: 25%;
+}
 .navBtn{
     height: 80%;
     width: 120px;
@@ -95,6 +112,7 @@ font-weight: 400;
   position: relative; 
     overflow: hidden;   
     cursor: pointer;
+    display: none;
 }
 
 .navBtn::before {
@@ -159,16 +177,33 @@ color: #2a2a2a;
 }
 
 .main-content-wrapper {
-  margin-bottom: 19.5vh;  
+  margin-bottom: 10vh;  
 }
+
 .main-heading{
     font-family: 'Goldman', sans-serif;
-    font-size: 128px;
+    font-size: clamp(75px, 7vw, 128px);
    background-color: #d7c4d8; 
   color: transparent;
   text-shadow: 4px 0 8px rgba(255, 255, 255, 0.4); 
   -webkit-background-clip: text;
   background-clip: text;
+  margin-bottom: 21vh;
+}
+@media screen and (min-width: 480px) {
+  .main-heading{
+    margin-bottom: 25vh;
+  }
+}
+@media screen and (min-width: 800px) and (hover: none) {
+  .main-heading{
+    margin-bottom: 20vh;
+  }
+}
+@media screen and (min-width: 800px) and (hover: hover) and (pointer: fine) {
+  .main-heading {
+    margin-bottom: 10vh; 
+  }
 }
 .main-heading-sub{
   font-family: 'Goldman', sans-serif;
@@ -204,6 +239,7 @@ color: #2a2a2a;
     margin-top: 2%;
     font-size: 24px;
     font-weight: 900;
+    margin-bottom: 20px;
 }
 .description{
     font-size: 14px;
@@ -211,13 +247,14 @@ color: #2a2a2a;
     max-width: 700px;
     margin: 15px auto;
     margin-bottom: 20px;
-    
+    display: none;
     
 }
 .button-wrapper{
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-bottom: 5px;
 }
 .btnwrap{
     height: 40px;
@@ -229,6 +266,8 @@ color: #2a2a2a;
     margin-right: 30px;
     justify-content: center;
     align-items: center;
+    display: none;
+    
 }
 .heroBtn1{
    display: block;
@@ -239,11 +278,11 @@ color: #2a2a2a;
     font-weight: 700;
     text-decoration: none;
     line-height: 35px;
-
+    display: none;
 }
 .heroBtn2{
-height: 40px;
-    width: 180px;
+height: 30px;
+    width: 90%;
     border-radius: 25px;
     background: linear-gradient(45deg, #00C8A7 0%, #4445BC 50%, #C700A2 100%);
     border: none;
@@ -251,7 +290,24 @@ height: 40px;
     font-weight: 700;
     color: #ffffff;
     text-decoration: none;
-    line-height: 40px;
+    line-height: 30px;
+}
+@media screen and (min-width: 800px) {
+  .main-heading{
+    margin-bottom: 30vh;
+  }
+  .btnwrap{
+    display: block;
+  }
+ .heroBtn1{
+    display: block;
+  }
+  .description{
+    display: block;
+  }
+  .heroBtn2{
+    width: 180px;
+  }
 }
 .partnerTitle{
     text-align: center;
