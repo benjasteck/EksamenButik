@@ -24,6 +24,7 @@ $HeaderImage = get_field("subpage_header_img");
 $ForsideHeaderTitel = get_field("subpageheader_titel");
 $ForsideHeaderUndertitel = get_field("forside_header_undertitel");
 $ForsideHeaderTekst = get_field("forside_header_tekst");
+$HeaderPhoneMenu = get_field("phonemenuimg");
 ?>
 
 <?php 
@@ -78,6 +79,11 @@ if( $link ):
     <div class="CTABtn1">
         <a>Book Nu</a>
     </div>
+    <div class="extendBtn">
+        <button>
+            <img src="<?php echo esc_url($HeaderPhoneMenu["url"]); ?>" alt="">
+        </button>
+    </div>
    </div>
 </nav>
 
@@ -85,8 +91,8 @@ if( $link ):
 <div class="main-container">
 <div class="main-content-wrapper">
   <h1 class="main-heading"><?php echo($ForsideHeaderTitel);?></h1>
-  <h2 class="subtext"><?php echo($ForsideHeaderUndertitel);?></h2>
-  <h3 class="description"><?php echo($ForsideHeaderTekst);?></h3>
+  <p class="subtext"><?php echo($ForsideHeaderUndertitel);?></p>
+  <p class="description"><?php echo($ForsideHeaderTekst);?></p>
   <div class="button-wrapper">
     <div class="btnwrap">
      <a class="heroBtn1"href="<?php echo esc_url( $link_url ); ?>" target="<?php echo esc_attr( $link_target ); ?>"><?php echo esc_html( $link_title ); ?></a>   
