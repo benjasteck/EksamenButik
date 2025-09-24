@@ -78,10 +78,10 @@ if( $link ):
 ?>
     
 <?php endif; ?>
-
+<a href="#main" class="skip-link">Skip to main content</a>
 <header id="header">
 <div class="container">
-<nav>
+<nav aria-label="Main menu">
    <div class="navLeft">
     <div class="logo">
         <img src="" alt="">

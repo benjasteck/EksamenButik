@@ -22,7 +22,7 @@ $byfesttekst = get_field("arrangement_titel9");
 
 <section id="arrangementer">
     <div class="sticky-container">
-        <h2 class="arrangementerTitle">Arrangementer</h2>
+        <h2 class="arrangementerTitle" aria-label="en liste af de typer af arrangementer vi har">Arrangementer</h2>
     <div class="image-group">
         <div class="stickyImg">
             <img src='<?php echo esc_url($bryllupfest["url"]); ?>' loading="lazy" alt="<?php echo $bryllupfest ["alt"]?>">
