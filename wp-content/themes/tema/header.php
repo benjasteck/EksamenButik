@@ -89,7 +89,7 @@ if( $link ):
    </div> 
    <div class="navMid">
         <ul>
-            <li><a href="/" class="navBtn selected">Hjem</a></li>
+            <li><a href="#main" class="navBtn selected">Hjem</a></li>
             <li><a href="/arrangement" class="navBtn">Arrangement</a></li>
             <li><a href="/djs" class="navBtn">DJs</a></li>
             <li><a href="/udlejning" class="navBtn">Udlejning</a></li>
@@ -102,7 +102,7 @@ if( $link ):
     </div>
     <div class="extendBtn">
         <button>
-            <img src="<?php echo esc_url($HeaderPhoneMenu["url"]); ?>" alt="">
+            <img src="<?php echo esc_url($HeaderPhoneMenu["url"]); ?>" alt="hamburbur knap / telefon navigation menu">
         </button>
     </div>
    </div>

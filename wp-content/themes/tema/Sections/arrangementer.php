@@ -25,7 +25,7 @@ $byfesttekst = get_field("arrangement_titel9");
         <h2 class="arrangementerTitle">Arrangementer</h2>
     <div class="image-group">
         <div class="stickyImg">
-            <img src='<?php echo esc_url($bryllupfest["url"]); ?>' loading="lazy" alt="<?php echo $bryllupfest ["alt"]?>">;
+            <img src='<?php echo esc_url($bryllupfest["url"]); ?>' loading="lazy" alt="<?php echo $bryllupfest ["alt"]?>">
             <h3><?php echo($bryllupfesttekst); ?></h3>
             <div class="arrBtn">
                 <p>Se Mere</p>

@@ -617,7 +617,7 @@ flex: 1;
     position: absolute;
     bottom: 40px
 }
-.stjernebox h3{
+.stjernebox p{
     font-size: 3rem;
     font-weight: 500;
     padding-left: 20px;
@@ -676,7 +676,7 @@ animation-play-state: paused;
 .bookingSubTitle{
     font-size: 24px;
     font-weight: 700;
-    margin-top: 30px;
+    margin-top: 20px;
 }
 
 .bookingLine{
@@ -718,7 +718,7 @@ animation-play-state: paused;
     padding: 0;
     line-height: 96px;
 }
-.bookingTextRight h4{
+.bookingTextRight div{
     font-size: 20px;
     font-weight: 700;
     margin: 0;
@@ -1168,13 +1168,13 @@ footer{
     color: #fff;
     letter-spacing: .12em;
     line-height: 140%;
-    text-transform: uppercase;
+    
 }
 .topContainerRight address h2{
      font-weight: 70;
     font-size: 36px;
     line-height: 40px;
-    text-transform: uppercase;
+   
     font-family: 'Goldman', sans-serif; 
     margin-bottom: 2.875rem;
     margin-top: 5rem;

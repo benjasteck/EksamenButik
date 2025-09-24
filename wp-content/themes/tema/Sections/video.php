@@ -16,7 +16,7 @@ $VideoTitel = get_field("video_titel");
 
 <section id="video">
 <div class="vidContent">
-<h2 class="vidTitle"><?php echo($VideoTitel); ?></h2>
+<div class="vidTitle"></div>
 <div class="ytContainer">
    <iframe width="100%" height="100%" src="https://www.youtube.com/embed/3dxEL18FYRM?si=Qz2POKjifcvCPZTM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen autoplay></iframe>
 </div>

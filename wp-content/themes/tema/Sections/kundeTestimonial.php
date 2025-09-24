@@ -6,7 +6,7 @@
             <h2 class="testimonialName">Niels Nielsen</h2>
             <p class="testimonialDesc">Det her det var satme fed jeiner. Book dem i sværger. dette var fedt for firmafesten</p>
             <div class="stjernebox">
-                <h3> ★ ★ ★ ★ ☆</h3>
+                <p> ★ ★ ★ ★ ☆</p>
             </div>
         </div>
     </div>
@@ -15,7 +15,7 @@
             <h2 class="testimonialName">Niels Nielsen</h2>
             <p class="testimonialDesc">Det her det var satme fed jeiner. Book dem i sværger. dette var fedt for firmafesten</p>
             <div class="stjernebox">
-                <h3> ★ ★ ★ ★ ☆</h3>
+                <p> ★ ★ ★ ★ ☆</p>
             </div>
         </div>
     </div>
@@ -24,7 +24,7 @@
             <h2 class="testimonialName">Niels Nielsen</h2>
             <p class="testimonialDesc">Det her det var satme fed jeiner. Book dem i sværger. dette var fedt for firmafesten</p>
             <div class="stjernebox">
-                <h3> ★ ★ ★ ★ ☆</h3>
+                <p> ★ ★ ★ ★ ☆</p>
             </div>
         </div>
     </div>
@@ -33,7 +33,7 @@
             <h2 class="testimonialName">Niels Nielsen</h2>
             <p class="testimonialDesc">Det her det var satme fed jeiner. Book dem i sværger. dette var fedt for firmafesten</p>
             <div class="stjernebox">
-                <h3> ★ ★ ★ ★ ☆</h3>
+                <p> ★ ★ ★ ★ ☆</p>
             </div>
         </div>
     </div>
@@ -42,7 +42,7 @@
             <h2 class="testimonialName">Niels Nielsen</h2>
             <p class="testimonialDesc">Det her det var satme fed jeiner. Book dem i sværger. dette var fedt for firmafesten</p>
             <div class="stjernebox">
-                <h3> ★ ★ ★ ★ ☆</h3>
+                <p> ★ ★ ★ ★ ☆</p>
             </div>
         </div>
     </div>
@@ -53,7 +53,7 @@
             <h2 class="testimonialName">Niels Nielsen</h2>
             <p class="testimonialDesc">Det her det var satme fed jeiner. Book dem i sværger. dette var fedt for firmafesten</p>
             <div class="stjernebox">
-                <h3> ★ ★ ★ ★ ☆</h3>
+                <p> ★ ★ ★ ★ ☆</p>
             </div>
         </div>
     </div>
@@ -62,7 +62,7 @@
             <h2 class="testimonialName">Niels Nielsen</h2>
             <p class="testimonialDesc">Det her det var satme fed jeiner. Book dem i sværger. dette var fedt for firmafesten</p>
             <div class="stjernebox">
-                <h3> ★ ★ ★ ★ ☆</h3>
+                <p> ★ ★ ★ ★ ☆</p>
             </div>
         </div>
     </div>
@@ -71,7 +71,7 @@
             <h2 class="testimonialName">Niels Nielsen</h2>
             <p class="testimonialDesc">Det her det var satme fed jeiner. Book dem i sværger. dette var fedt for firmafesten</p>
             <div class="stjernebox">
-                <h3> ★ ★ ★ ★ ☆</h3>
+                <p> ★ ★ ★ ★ ☆</p>
             </div>
         </div>
     </div>
@@ -80,7 +80,7 @@
             <h2 class="testimonialName">Niels Nielsen</h2>
             <p class="testimonialDesc">Det her det var satme fed jeiner. Book dem i sværger. dette var fedt for firmafesten</p>
             <div class="stjernebox">
-                <h3> ★ ★ ★ ★ ☆</h3>
+                <p> ★ ★ ★ ★ ☆</p>
             </div>
         </div>
     </div>
@@ -89,7 +89,7 @@
             <h2 class="testimonialName">Niels Nielsen</h2>
             <p class="testimonialDesc">Det her det var satme fed jeiner. Book dem i sværger. dette var fedt for firmafesten</p>
             <div class="stjernebox">
-                <h3> ★ ★ ★ ★ ☆</h3>
+                <p> ★ ★ ★ ★ ☆</p>
             </div>
         </div>
     </div>

@@ -60,7 +60,7 @@ $blogBaggrund = get_field("blog_background");
                                 <a href="<?php echo esc_url($tag3["url"]); ?>" class="tag"><?php echo esc_html($tag3["title"]); ?></a>
                             <?php endif; ?>
                         </div>
-                        <h4 class="blogSnippet"><?php echo esc_html($excerpt); ?></h4>
+                        <p class="blogSnippet"><?php echo esc_html($excerpt); ?></p>
                         <div class="blogBtn">
                             <a href="<?php echo esc_url($blogUrl["url"]); ?>">Læs Mere</a>
                         </div>
@@ -78,7 +78,7 @@ $blogBaggrund = get_field("blog_background");
     <button onclick="smoothScroll(document.getElementById('blogContainer'))" class="upBtn">↑</button>
 </div>
     <h1 class="blogBottomTitle">Vi klarer alt det praktiske og tekniske</h1>
-    <h4 class="BlogBottomSubTitle">Til alle dine fester leverer vi det perfekte mobildiskotek. Med en professionel DJ bag pulten får du den helt rigtige musik og et imponerende lyd & lys show, der forvandler ethvert rum til en fest.</h4>
+    <h2 class="BlogBottomSubTitle">Til alle dine fester leverer vi det perfekte mobildiskotek. Med en professionel DJ bag pulten får du den helt rigtige musik og et imponerende lyd & lys show, der forvandler ethvert rum til en fest.</h2>
     <div class="blogBottomBtn">
         <p>BOOK TID</p>
     </div>
