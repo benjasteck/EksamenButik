@@ -28,7 +28,7 @@ $blogBaggrund = get_field("blog_background");
             $tag1 = get_field("tag1");
             $tag2 = get_field("tag2");
             $tag3 = get_field("tag3");
-            
+            $blogUrl = get_field("blog_url");
             $post_id = "post" . $post_counter;
             ?>
             
@@ -62,7 +62,7 @@ $blogBaggrund = get_field("blog_background");
                         </div>
                         <h4 class="blogSnippet"><?php echo esc_html($excerpt); ?></h4>
                         <div class="blogBtn">
-                            <a href="<?php echo esc_url($url); ?>">Læs Mere</a>
+                            <a href="<?php echo esc_url($blogUrl["url"]); ?>">Læs Mere</a>
                         </div>
                     </div>
                 </div>
