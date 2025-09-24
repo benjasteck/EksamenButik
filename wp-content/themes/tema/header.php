@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en" <?php language_attributes(); ?>>
+<html lang="en"<?php language_attributes();?>>
 <head>
     <meta name="viewport" content="with=device-width, initial-scale=1.0">
     <meta charset="UTF-8">
