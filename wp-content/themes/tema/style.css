@@ -1153,6 +1153,8 @@ footer{
     z-index: 1;
     line-height: 33px;
     cursor: pointer;
+    height: 24px;
+    width: 24px;
 }
 .topContainerLeft form button img{
     overflow-clip-margin: content-box;
