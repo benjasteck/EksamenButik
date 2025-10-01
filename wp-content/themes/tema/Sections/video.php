@@ -18,7 +18,7 @@ $VideoTitel = get_field("video_titel");
 <div class="vidContent">
 <div class="vidTitle"></div>
 <div class="ytContainer">
-   <iframe width="100%" height="100%" src="https://www.youtube.com/embed/3dxEL18FYRM?si=Qz2POKjifcvCPZTM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen autoplay></iframe>
+   <iframe width="1000" height="500" src="https://www.youtube.com/embed/3dxEL18FYRM?si=Qz2POKjifcvCPZTM" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen ></iframe>
 </div>
 <a href="">Se Mere</a>
 </div>
