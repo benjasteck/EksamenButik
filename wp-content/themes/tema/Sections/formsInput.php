@@ -26,10 +26,10 @@
                     <h1>3</h1>
                 </div>
                 <div class="bookingTextRight">
-                    <div>Når jeres festligheder nærmer sig skriver vi til dig igen. Eventuelle ændringer tages højde for, ekstra udstyr bookes ind eller andre ting bliver talt igennem. DJ’en vil foretage et uformelt telefonopkald til jer for at hilse på samt snakke detaljerne igenne med jer, så alt er klarlagt inden festlighederne starter.
+                    <h2>Når jeres festligheder nærmer sig skriver vi til dig igen. Eventuelle ændringer tages højde for, ekstra udstyr bookes ind eller andre ting bliver talt igennem. DJ’en vil foretage et uformelt telefonopkald til jer for at hilse på samt snakke detaljerne igenne med jer, så alt er klarlagt inden festlighederne starter.
                         <br><br>
                         Vi bestræber os på at svare inden for 24 timer. (weekend og helligdage undtaget)
-                    </div>
+                    </h2>
                 </div>
             </div>
         </div>
@@ -38,36 +38,36 @@
         <div class="formularContainer">
             <div class="inputContainer">
              <label for="name">Navn</label>   
-            <input type="text" class="nameInput" placeholder="Skriv Dit Navn">    
+            <input type="text" id="name" class="nameInput" placeholder="Skriv Dit Navn">    
             </div> 
             
             <div class="inputContainer">
-             <label for="name">Email</label>   
-            <input type="text" class="nameInput" placeholder="Skriv Din Email">    
+             <label for="email">Email</label>   
+            <input type="text" id="email" class="nameInput" placeholder="Skriv Din Email">    
             </div> 
             
             <div class="inputContainer">
-             <label for="name">TLF</label>   
-            <input type="text" class="nameInput" placeholder="Skriv Dit Telefon Nummer">    
+             <label for="tlf">TLF</label>   
+            <input type="text" id="tlf" class="nameInput" placeholder="Skriv Dit Telefon Nummer">    
             </div> 
 
             <div class="twoinputsContainer">
                 <div class="inputRight">
                     <div class="inputContainer" id="shortInput1">
-                    <label for="name">Dato</label>   
-                    <input type="text" class="shortInput" placeholder="Skriv Dato For Fest">    
+                    <label for="date">Dato</label>   
+                    <input type="text" id="date" class="shortInput" placeholder="Skriv Dato For Fest">    
                      </div> 
                 </div>
                 <div class="inputLeft">
                     <div class="inputContainer" id="shortInput2">
-                    <label for="name">Gæster</label>   
-                    <input type="text" class="shortInput" placeholder="Skriv Antal Gæster">    
+                    <label for="gest">Gæster</label>   
+                    <input type="text" id="gest" class="shortInput" placeholder="Skriv Antal Gæster">    
                     </div>
                 </div>
             </div>
             <div class="inputContainer" id="inputStor">
-             <label for="name">Beskrivelse</label>   
-            <input type="text" class="bigInput" placeholder="Beskriv fest, spilletid samt ekstra tanker">    
+             <label for="besk">Beskrivelse</label>   
+            <input type="text" id="besk" class="bigInput" placeholder="Beskriv fest, spilletid samt ekstra tanker">    
             </div> 
             <div class="inputBtn">
                 <p>Send forespørgsel</p>

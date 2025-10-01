@@ -1,40 +1,19 @@
 <?php get_header() ?>
-
-    <?php 
+<?php 
     $ForsideHeaderTitel = get_field("subpageheader_titel",  get_option( 'page_for_posts' ));
-    
     ?>
-    <h1 class="main-heading-sub"><?php echo esc_html($ForsideHeaderTitel); ?></h1>
-
-    <div class="blogContainer">
-	<?php if(have_posts()): ?>
-        <?php
+<h1 class="main-heading-sub"><?php echo esc_html($ForsideHeaderTitel); ?></h1>
+<div class="blogContainer">
+    <?php if(have_posts()): ?>
+    <?php
         $post_counter = 1; 
         $top_value = 10;
         ?>
-		<?php while(have_posts()): the_post() ?>
-
-
-        <?php
-    
+    <?php while(have_posts()): the_post() ?>
+    <?php
     $headerImageUrl = get_field("subpage_header_img",  get_option( 'page_for_posts' ));
-    
-    
-
 ?>
-
-<style>
-#header {
-    background-image: url('<?php echo esc_url($headerImageUrl["url"]); ?>');
-    height: 66vh;
-    
-}
-.button-wrapper{
-    display: none;
-}
-</style>
-
-			<?php
+    <?php
 			$url = get_the_permalink();
 			$title = get_the_title();
 			$excerpt = get_the_excerpt();
@@ -42,52 +21,61 @@
 			$tags = get_the_tags();
             $image = get_field("blogimg");
             $post_id = "post" . $post_counter;
-            
 			?>
-			
-
-            
-            <div class="blogContent"  id="<?php echo esc_attr($post_id); ?>">
-                <div class="stickycontainer">
-                    <div class="blogImg"  style="top: <?php echo esc_attr($top_value); ?>px;">
-                        <div class="stickyImg2" >
-                            <img src="<?php echo esc_url($image["url"]); ?>" alt="">
-                        </div>
-                        
+    <div class="blogContent" id="<?php echo esc_attr($post_id); ?>">
+        <div class="stickycontainer">
+            <div class="blogImg" style="top: <?php echo esc_attr($top_value); ?>px;">
+                <div class="stickyImg2">
+                    <img src="<?php echo esc_url($image["url"]); ?>" alt="">
                 </div>
             </div>
-            <div class="blogText">
-                <div class="blogTextContent">
+        </div>
+        <div class="blogText">
+            <div class="blogTextContent">
                 <div class="progressbar">
-                    <div class="progressbarInner">
-
-                    </div>
+                    <div class="progressbarInner"></div>
                 </div>
                 <h1 class="blogTitel"><?php echo esc_html($title); ?></h1>
                 <div class="tagContainer">
                     <?php if($tags): ?>
-									<?php foreach($tags as $tag): ?>
-										<a href="<?php echo get_tag_link($tag->term_id); ?>" class="tag"><?php echo $tag->name; ?></a>
-									<?php endforeach; ?>
-								<?php endif; ?>
+                    <?php foreach($tags as $tag): ?>
+                    <a href="<?php echo get_tag_link($tag->term_id); ?>" class="tag"><?php echo $tag->name; ?></a>
+                    <?php endforeach; ?>
+                    <?php endif; ?>
                 </div>
                 <h4 class="blogSnippet"><?php echo esc_html($excerpt); ?></h4>
                 <div class="blogBtn">
                     <a href="<?php echo esc_url($url); ?>">Læs Mere</a>
                 </div>
-                </div>
             </div>
-            </div>
-   
+        </div>
+    </div>
 
-          <?php 
+
+    <?php 
           $post_counter++;
           $top_value += 10;
-          ?>  
-                                       
-		<?php endwhile; ?>
-		
-	<?php endif; ?>
-            
+          ?>
+
+
+
+    <?php if(comments_open() || get_comments_number()): ?>
+    <?php comments_template(); ?>
+    <?php endif; ?>
+    <?php endwhile; ?>
+
+    <?php endif; ?>
+
 </div>
+<style>
+#header {
+    background-image: url('<?php echo esc_url($headerImageUrl["url"]); ?>');
+    height: 66vh;
+
+}
+
+.button-wrapper {
+    display: none;
+}
+</style>
 <?php get_footer() ?>

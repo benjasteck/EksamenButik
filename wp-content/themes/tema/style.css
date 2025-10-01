@@ -7,8 +7,7 @@ Date: 2025-20-08
 :root{
     --minWidth: 1300px;
     --maxWidth: 1500px;
-    --width: 80%
-}
+    --width: 80%;}
 
 *{
     margin: 0;
@@ -1086,6 +1085,10 @@ footer{
     flex-grow: 1;
     height: 100%;
 }
+.emailKnap{
+color: white;
+
+}
 
 .topContainerMid{
     flex-grow: 1;
@@ -1170,7 +1173,7 @@ footer{
     line-height: 140%;
     
 }
-.topContainerRight address h2{
+.addressTitle{
      font-weight: 70;
     font-size: 36px;
     line-height: 40px;
