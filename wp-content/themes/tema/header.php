@@ -1,4 +1,14 @@
 <!doctype html>
+
+<?php
+$HeaderImage = get_field("subpage_header_img");
+$ForsideHeaderTitel = get_field("subpageheader_titel");
+$ForsideHeaderTitelStor = get_field("subpageheader_titel_stor");
+$ForsideHeaderUndertitel = get_field("forside_header_undertitel");
+$ForsideHeaderTekst = get_field("forside_header_tekst");
+$HeaderPhoneMenu = get_field("phonemenuimg");
+?>
+
 <html lang="en"<?php language_attributes();?>>
 <head>
     <meta name="viewport" content="with=device-width, initial-scale=1.0">
@@ -47,14 +57,7 @@
  
 
 
-<?php
-$HeaderImage = get_field("subpage_header_img");
-$ForsideHeaderTitel = get_field("subpageheader_titel");
-$ForsideHeaderTitelStor = get_field("subpageheader_titel_stor");
-$ForsideHeaderUndertitel = get_field("forside_header_undertitel");
-$ForsideHeaderTekst = get_field("forside_header_tekst");
-$HeaderPhoneMenu = get_field("phonemenuimg");
-?>
+
 
 <?php 
 $link = get_field('forside_header_sort_knap');

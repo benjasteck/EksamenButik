@@ -89,7 +89,12 @@ font-weight: 400;
     list-style-type: none;
     height: 100%;
     gap: 10px;
+    align-items: center;
 }
+.navMid ul li{
+height: 80%;
+}
+
 .extendBtn{
 display: block;
 }
@@ -106,7 +111,7 @@ width: auto;
 margin-top: 25%;
 }
 .navBtn{
-    height: 80%;
+    height: 100%;
     width: 120px;
     border-radius: 25px;
     background-color: #00000040;
@@ -150,11 +155,13 @@ columns: white;
 }
 
 
-.navBtn:hover a{
+.navBtn:hover{
     font-weight: 600;
 }
 .navBtn.selected{
     background-color: #ffffffcc;
+    font-weight: 700;
+color: #2a2a2a; 
 }
 .navBtn.selected a{
 font-weight: 700;
@@ -326,7 +333,7 @@ height: 30px;
     max-width: 800px;
 }
 .heroBtn2{
-    width: 270px;
+    width: 180px;
     height: 40px;
     line-height: 40px;
   }
