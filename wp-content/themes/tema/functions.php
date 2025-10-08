@@ -65,3 +65,34 @@ function custom_excerpt_length($length) {
     return 30; // Change 20 to the desired word count
 }
 add_filter('excerpt_length', 'custom_excerpt_length');
+
+
+function demo_review_form_handler() {
+	$fornavn = sanitize_text_field($_REQUEST["fornavn"]);
+	$efternavn = sanitize_text_field($_REQUEST["efternavn"]);
+	$bopael = sanitize_text_field($_REQUEST["bopael"]);
+	$alder = absint($_REQUEST["alder"]);
+    $sporgsmal-1 = sanitize_textarea_field($_REQUEST["sporgsmal-1"]);
+    $sporgsmal-2 = sanitize_textarea_field($_REQUEST["sporgsmal-2"]);
+    $sporgsmal-3 = sanitize_textarea_field($_REQUEST["sporgsmal-3"]);
+    $sporgsmal-4 = sanitize_textarea_field($_REQUEST["sporgsmal-4"]);
+
+	$answer= wp_insert_post(array(
+		"post_type" => "question answer",
+		"post_status" => "publish",
+		"post_title" => "answer of " . get_the_title($fornavn)));
+	
+	update_field("fornavn", $fornavn, $answer);
+	update_field("efternavn", $efternavn, $answer);
+	update_field("bopael", $bopael, $answer);
+	update_field("alder", $alder, $answer);
+    update_field("sporgsmal-1", $sporgsmal-1, $answer);
+    update_field("sporgsmal-2", $sporgsmal-2, $answer);
+    update_field("sporgsmal-3", $sporgsmal-3, $answer);
+    update_field("sporgsmal-4", $sporgsmal-4, $answer);
+	
+	wp_redirect($_SERVER["HTTP_REFERER"]);
+	exit;
+}
+add_action("admin_post_review_form", "demo_review_form_handler");
+add_action("admin_post_nopriv_review_form", "demo_review_form_handler");
