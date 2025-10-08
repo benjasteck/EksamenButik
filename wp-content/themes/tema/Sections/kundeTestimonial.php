@@ -1,111 +1,74 @@
 <section id="kunde">
     <div class="testimonialContainer">
-        <div class="kundeSlide">
+        <?php
+            $args = array(
+            'post_type'      => 'testimonial',
+            'posts_per_page' => -1,
+            'orderby'        => 'menu_order',
+            'order'          => 'ASC',
+        );
+
+        $testimonials = get_posts($args);
+        if ($testimonials) {
+            echo '<div class="kundeSlide">';
+            foreach ($testimonials as $post) {
+                setup_postdata($post);
+                $Title = get_field('testimonialtitle');
+                $Description = get_field('testimonialtekst');
+                $Stars = get_field('testimonialscore');
+                
+
+                if ($Title && $Description && $Stars) {
+                    echo '
             <div class="testimonial">
                 <div class="testimonialContent">
-                    <h2 class="testimonialName">Niels Nielsen</h2>
-                    <p class="testimonialDesc">Det her det var satme fed jeiner. Book dem i sværger. dette var fedt for
-                        firmafesten</p>
+                    <h2 class="testimonialName">' . esc_html($Title) . '</h2>
+                    <p class="testimonialDesc">' . esc_html($Description) . '</p>
                     <div class="stjernebox">
-                        <p> ★ ★ ★ ★ ☆</p>
+                        <p>' . esc_html($Stars) . '</p>
                     </div>
                 </div>
-            </div>
+            </div>';
+                }
+            }
+            echo '</div>';
+            wp_reset_postdata();
+
+
+            echo '<div class="kundeSlide">';
+            foreach ($testimonials as $post) {
+                setup_postdata($post);
+                $Title = get_field('testimonialtitle');
+                $Description = get_field('testimonialtekst');
+                $Stars = get_field('testimonialscore');
+                
+
+                if ($Title && $Description && $Stars) {
+                    echo '
             <div class="testimonial">
                 <div class="testimonialContent">
-                    <h2 class="testimonialName">Niels Nielsen</h2>
-                    <p class="testimonialDesc">Det her det var satme fed jeiner. Book dem i sværger. dette var fedt for
-                        firmafesten</p>
+                    <h2 class="testimonialName">' . esc_html($Title) . '</h2>
+                    <p class="testimonialDesc">' . esc_html($Description) . '</p>
                     <div class="stjernebox">
-                        <p> ★ ★ ★ ★ ☆</p>
+                        <p>' . esc_html($Stars) . '</p>
                     </div>
                 </div>
-            </div>
-            <div class="testimonial">
-                <div class="testimonialContent">
-                    <h2 class="testimonialName">Niels Nielsen</h2>
-                    <p class="testimonialDesc">Det her det var satme fed jeiner. Book dem i sværger. dette var fedt for
-                        firmafesten</p>
-                    <div class="stjernebox">
-                        <p> ★ ★ ★ ★ ☆</p>
-                    </div>
-                </div>
-            </div>
-            <div class="testimonial">
-                <div class="testimonialContent">
-                    <h2 class="testimonialName">Niels Nielsen</h2>
-                    <p class="testimonialDesc">Det her det var satme fed jeiner. Book dem i sværger. dette var fedt for
-                        firmafesten</p>
-                    <div class="stjernebox">
-                        <p> ★ ★ ★ ★ ☆</p>
-                    </div>
-                </div>
-            </div>
-            <div class="testimonial">
-                <div class="testimonialContent">
-                    <h2 class="testimonialName">Niels Nielsen</h2>
-                    <p class="testimonialDesc">Det her det var satme fed jeiner. Book dem i sværger. dette var fedt for
-                        firmafesten</p>
-                    <div class="stjernebox">
-                        <p> ★ ★ ★ ★ ☆</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="kundeSlide">
-            <div class="testimonial">
-                <div class="testimonialContent">
-                    <h2 class="testimonialName">Niels Nielsen</h2>
-                    <p class="testimonialDesc">Det her det var satme fed jeiner. Book dem i sværger. dette var fedt for
-                        firmafesten</p>
-                    <div class="stjernebox">
-                        <p> ★ ★ ★ ★ ☆</p>
-                    </div>
-                </div>
-            </div>
-            <div class="testimonial">
-                <div class="testimonialContent">
-                    <h2 class="testimonialName">Niels Nielsen</h2>
-                    <p class="testimonialDesc">Det her det var satme fed jeiner. Book dem i sværger. dette var fedt for
-                        firmafesten</p>
-                    <div class="stjernebox">
-                        <p> ★ ★ ★ ★ ☆</p>
-                    </div>
-                </div>
-            </div>
-            <div class="testimonial">
-                <div class="testimonialContent">
-                    <h2 class="testimonialName">Niels Nielsen</h2>
-                    <p class="testimonialDesc">Det her det var satme fed jeiner. Book dem i sværger. dette var fedt for
-                        firmafesten</p>
-                    <div class="stjernebox">
-                        <p> ★ ★ ★ ★ ☆</p>
-                    </div>
-                </div>
-            </div>
-            <div class="testimonial">
-                <div class="testimonialContent">
-                    <h2 class="testimonialName">Niels Nielsen</h2>
-                    <p class="testimonialDesc">Det her det var satme fed jeiner. Book dem i sværger. dette var fedt for
-                        firmafesten</p>
-                    <div class="stjernebox">
-                        <p> ★ ★ ★ ★ ☆</p>
-                    </div>
-                </div>
-            </div>
-            <div class="testimonial">
-                <div class="testimonialContent">
-                    <h2 class="testimonialName">Niels Nielsen</h2>
-                    <p class="testimonialDesc">Det her det var satme fed jeiner. Book dem i sværger. dette var fedt for
-                        firmafesten</p>
-                    <div class="stjernebox">
-                        <p> ★ ★ ★ ★ ☆</p>
-                    </div>
-                </div>
-            </div>
-        </div>
+            </div>';
+                }
+            }
+            echo '</div>';
+            wp_reset_postdata();
+
+
+        }
+        ?>
     </div>
-    <div class="testimonialBtnWrapper"><a href="<?php echo wp_registration_url(); ?>" class="testimonialBtn">skriv en
-            testimonial</a></div>
+    <div class="testimonialBtnWrapper">
+        <?php if ( is_user_logged_in() ): ?>
+        <a href="<?php echo esc_url( home_url('/dashboard') ); ?>">Skriv en testimonial</a>
+        <?php else: ?>
+        <a href="<?php echo wp_registration_url(); ?>">Skriv en testimonial</a>
+        <?php endif; ?>
+    </div>
 
 </section>
