@@ -642,7 +642,26 @@ animation-play-state: paused;
 .testimonial:hover{
     transform: scale(1.1);
 }
-
+.testimonialBtnWrapper{
+    
+    height: 35px;
+    width: 180px;
+    border-radius: 10px;
+    background: linear-gradient(45deg, #00C8A7 0%, #4445BC 50%, #C700A2 100%);
+    margin: 30px auto;
+}
+.testimonialBtn{
+    display: block;
+    text-decoration: none;
+    color: white;
+    height: 100%;
+    width: 100%;
+    border-radius: 25px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 35px;
+    text-align: center;
+}
 @keyframes scroll {
     from {
         transform: translateX(-100%);
