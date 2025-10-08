@@ -65,9 +65,9 @@
     </div>
     <div class="testimonialBtnWrapper">
         <?php if ( is_user_logged_in() ): ?>
-        <a href="<?php echo esc_url( home_url('/dashboard') ); ?>">Skriv en testimonial</a>
+        <a class="testimonialBtn" id="openTestimonialModal" href="#">Skriv en testimonial</a>
         <?php else: ?>
-        <a href="<?php echo wp_registration_url(); ?>">Skriv en testimonial</a>
+        <a class="testimonialBtn" href="<?php echo wp_registration_url(); ?>">Skriv en testimonial</a>
         <?php endif; ?>
     </div>
 
