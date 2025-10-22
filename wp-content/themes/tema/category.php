@@ -10,7 +10,7 @@
             $title = get_the_title();
             $date = get_the_date();
             $author = get_the_author();
-            $excerpt = get_the_excerpt(); // Use get_the_excerpt() for a list of posts
+            $excerpt = get_the_excerpt();
             $permalink = get_the_permalink();
             ?>
 

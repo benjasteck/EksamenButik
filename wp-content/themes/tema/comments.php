@@ -5,8 +5,8 @@
 		<ul class="commentlist">
 			<?php wp_list_comments(); ?>
 		</ul>
-		<?php the_comments_navigation(); ?> <!-- Pick one of these -->
-		<?php paginate_comments_links(); ?> <!-- Pick one of these -->
+		<?php the_comments_navigation(); ?> 
+		<?php paginate_comments_links(); ?> 
 	<?php endif; ?>
 
 	<?php if(comments_open()): ?>

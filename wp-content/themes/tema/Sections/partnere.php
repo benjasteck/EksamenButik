@@ -29,7 +29,6 @@ $PartnerTitel = get_field("partner_title");
             echo '</div>';
             wp_reset_postdata();
 
-            // Second logoSlide div
             echo '<div class="logoSlide">';
             foreach ($partner_logos as $post) {
                 setup_postdata($post);

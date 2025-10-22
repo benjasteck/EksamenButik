@@ -63,16 +63,14 @@ $HeaderPhoneMenu = get_field("phonemenuimg");
 $link = get_field('forside_header_sort_knap');
 $link2 = get_field('forside_header_farvet_knap');
 
-// Tjek om feltet indeholder data, før du fortsætter
+
 if( $link ): 
-    // Uddrag URL, titel og target fra array'et
     $link_url = $link['url'];
     $link_title = $link['title'];
     $link_target = $link['target'] ? $link['target'] : '_self';
     endif; 
 
     if( $link2 ): 
-        // Uddrag URL, titel og target fra array'et
         $link2_url = $link2['url'];
         $link2_title = $link2['title'];
         $link2_target = $link2['target'] ? $link2['target'] : '_self';

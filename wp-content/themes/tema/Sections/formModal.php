@@ -51,20 +51,16 @@ document.addEventListener('DOMContentLoaded', function() {
     const cancelButton = document.getElementById('testimonialInputCancel');
     const modal = document.getElementById('testimonialModal');
 
-    // Define the duration of the CSS transition (must match the CSS: 0.3s = 300ms)
     const fadeDuration = 300;
 
     if (cancelButton && modal) {
         cancelButton.addEventListener('click', function() {
             modal.classList.remove('fade-in');
-            // Step 1: Start the animation by adding the CSS class
             modal.classList.add('fade-out');
 
-            // Step 2 & 3: Wait for the animation to finish, then hide the element completely
             setTimeout(() => {
                 modal.style.display = 'none';
 
-                // (Optional cleanup: remove the class just in case the modal is shown again)
                 modal.classList.remove('fade-out');
             }, fadeDuration);
 
