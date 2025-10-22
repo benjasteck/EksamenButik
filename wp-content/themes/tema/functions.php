@@ -136,3 +136,8 @@ function demo_testimonial_form_handler() {
 }
 add_action("admin_post_testimonial_form", "demo_testimonial_form_handler");
 add_action("admin_post_nopriv_testimonial_form", "demo_testimonial_form_handler");
+
+function shop_enable_woocommerce(){
+    add_theme_support("woocommerce");
+}
+add_action("after_setup_theme", "shop_enable_woocommerce");

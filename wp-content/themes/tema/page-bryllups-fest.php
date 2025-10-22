@@ -23,6 +23,25 @@
             ?>
 
 <h2 class="main-heading N2">BRYLLUPSFEST</h2>
+<div class="product-listing-area">
+
+    <?php 
+    // Option 1: Call the reusable function directly, specifying the tag slug
+    // We are calling render_products_by_tag() and echoing its output.
+    echo render_products_by_tag( 'BryllupFest' ); 
+    ?>
+
+    <hr>
+
+    <?php
+    // Option 2: Call the second section function (if you still want to define and use helper functions)
+    // NOTE: If you define render_sale_section() and render_homepage_section() 
+    // in functions.php, you can call them like this:
+    
+    // echo render_sale_section(); // Assuming this function is globally defined
+    ?>
+
+</div>
 <div class="productImgLine">
     <img src="<?php echo esc_url($image1["url"]); ?> " alt="" class="active">
     <img src="<?php echo esc_url($image2["url"]); ?> " alt="">
