@@ -17,23 +17,24 @@
             <form method="post">
                 <input type="email" name="Email" placeholder="Din Email">
                 <button type="submit" value=" ">
-                   <span class="emailKnap">🡪</span> 
+                    <span class="emailKnap">🡪</span>
                 </button>
             </form>
-            </div>
+        </div>
         <div class="topContainerRight">
             <address>
-            <p class="addressTitle">esbjerg</p>
-            <p>Brolæggervej 17</p>
-            <p>6710 Esbjerg</p>
-            <p>(+45)11223344</p>
-            <p>random@email.dk</p>
-        </address>
-            </div>
-            </div>
+                <p class="addressTitle">esbjerg</p>
+                <p>Brolæggervej 17</p>
+                <p>6710 Esbjerg</p>
+                <p>(+45)11223344</p>
+                <p>random@email.dk</p>
+            </address>
+        </div>
+    </div>
     <div class="footerContainerBottom">
     </div>
 </footer>
 <?php  wp_footer();  ?>
 </body>
+
 </html>

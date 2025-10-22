@@ -15,40 +15,44 @@ $VideoTitel = get_field("video_titel");
 ?>
 
 <section id="video">
-<div class="vidContent">
-<div class="vidTitle"></div>
-<div class="ytContainer">
-   <iframe width="1000" height="500" src="https://www.youtube.com/embed/3dxEL18FYRM?si=Qz2POKjifcvCPZTM" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen ></iframe>
-</div>
-<a href="">Se Mere</a>
-</div>
+    <div class="vidContent">
+        <div class="vidTitle"></div>
+        <div class="ytContainer">
+            <iframe width="1000" height="500" src="https://www.youtube.com/embed/3dxEL18FYRM?si=Qz2POKjifcvCPZTM"
+                title="YouTube video player"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+        <a href="">Se Mere</a>
+    </div>
 </section>
 
 <section id="fester">
-<div class="festercontainer">
-    <div class="festcontent1">
-    <h2 class="festnummer"><?php echo($FestType1Titel); ?></h2>
-        <p class="festBeskrivelse"> <?php echo($FestType1Undertitel);?></p>
-        <div class="festLine"></div>
+    <div class="festercontainer">
+        <div class="festcontent1">
+            <h2 class="festnummer"><?php echo($FestType1Titel); ?></h2>
+            <p class="festBeskrivelse"> <?php echo($FestType1Undertitel);?></p>
+            <div class="festLine"></div>
+        </div>
+        <div class="festcontent2">
+            <h2 class="festnummer"><?php echo($FestType2Titel); ?></h2>
+            <p class="festBeskrivelse"> <?php echo($FestType2Undertitel);?></p>
+            <div class="festLine"></div>
+        </div>
+        <div class="festcontent3">
+            <h2 class="festnummer"><?php echo($FestType3Titel); ?></h2>
+            <p class="festBeskrivelse"> <?php echo($FestType3Undertitel);?></p>
+            <div class="festLine"></div>
+        </div>
+        <div class="festcontent4">
+            <h2 class="festnummer"><?php echo($FestType4Titel); ?></h2>
+            <p class="festBeskrivelse"> <?php echo($FestType4Undertitel);?></p>
+            <div class="festLine"></div>
+        </div>
     </div>
-    <div class="festcontent2">
-    <h2 class="festnummer"><?php echo($FestType2Titel); ?></h2>
-    <p class="festBeskrivelse"> <?php echo($FestType2Undertitel);?></p>
-        <div class="festLine"></div>
-    </div>
-    <div class="festcontent3">
-    <h2 class="festnummer"><?php echo($FestType3Titel); ?></h2>
-    <p class="festBeskrivelse"> <?php echo($FestType3Undertitel);?></p>
-        <div class="festLine"></div>
-    </div>
-    <div class="festcontent4">
-    <h2 class="festnummer"><?php echo($FestType4Titel); ?></h2>
-    <p class="festBeskrivelse"> <?php echo($FestType4Undertitel);?></p>
-        <div class="festLine"></div>
-    </div>
-</div>
-<style>
-#video {
-    background-image: url('<?php echo esc_url($videoBaggrund["url"]); ?>');}
-</style>
+    <style>
+    #video {
+        background-image: url('<?php echo esc_url($videoBaggrund["url"]); ?>');
+    }
+    </style>
 </section>

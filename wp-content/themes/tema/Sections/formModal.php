@@ -4,13 +4,10 @@
             <form action="<?php echo esc_url( admin_url('admin-post.php') ); ?>" method="post">
                 <input type="hidden" name="action" value="testimonial_form" placeholder="Navn: ">
                 <?php wp_nonce_field( 'simple_form_nonce_action', 'simple_form_nonce_field' ); ?>
-
                 <label for="testimonialtitle" id="testimonialtitle">Navn:</label><br>
                 <input type="text" id="navn" name="testimonialtitle"><br>
-
                 <label for="testimonialtekst" id="testimonialtekst">Besked:</label><br>
                 <textArea type="textArea" id="besked" name="testimonialtekst"></textArea><br><br>
-
                 <p>
                     <label for="testimonialscore" id="testimonialscore">Rating:</label>
                 <div class="emoji-stars">
@@ -50,17 +47,14 @@
 document.addEventListener('DOMContentLoaded', function() {
     const cancelButton = document.getElementById('testimonialInputCancel');
     const modal = document.getElementById('testimonialModal');
-
     const fadeDuration = 300;
 
     if (cancelButton && modal) {
         cancelButton.addEventListener('click', function() {
             modal.classList.remove('fade-in');
             modal.classList.add('fade-out');
-
             setTimeout(() => {
                 modal.style.display = 'none';
-
                 modal.classList.remove('fade-out');
             }, fadeDuration);
 
