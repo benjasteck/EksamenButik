@@ -3,7 +3,6 @@ function bst_load_resources() {
     wp_enqueue_style("main-css", get_template_directory_uri() . "/style.css");
 }
 add_action("wp_enqueue_scripts", "bst_load_resources");
-// Disable gutenberg editor
 function disable_gutenberg() {
     remove_post_type_support('page', 'editor');
 
@@ -35,34 +34,33 @@ WaveForm
 
 
 function mytheme_enqueue_scripts() {
-    // Register and enqueue your custom JS file
     wp_enqueue_script(
-        'mytheme-js', // Handle (unique ID)
-        get_template_directory_uri() . '/js/loadText.js', // File path
-        array('jquery'), // Dependencies (optional)
-        filemtime(get_template_directory() . '/js/loadText.js'), // Version (good for cache-busting)
-        true // Load in footer (true) or header (false)
+        'mytheme-js',
+        get_template_directory_uri() . '/js/loadText.js', 
+        array('jquery'), 
+        filemtime(get_template_directory() . '/js/loadText.js'), 
+        true 
     );
      wp_enqueue_script(
-        'mytheme2-js', // Handle (unique ID)
-        get_template_directory_uri() . '/js/buttonmagic.js', // File path
-        array('jquery'), // Dependencies (optional)
-        filemtime(get_template_directory() . '/js/buttonmagic.js'), // Version (good for cache-busting)
-        true // Load in footer (true) or header (false)
+        'mytheme2-js', 
+        get_template_directory_uri() . '/js/buttonmagic.js', 
+        array('jquery'), 
+        filemtime(get_template_directory() . '/js/buttonmagic.js'), 
+        true 
     );
     wp_enqueue_script(
-        'mytheme3-js', // Handle (unique ID)
-        get_template_directory_uri() . '/js/progressbar.js', // File path
-        array('jquery'), // Dependencies (optional)
-        filemtime(get_template_directory() . '/js/progressbar.js'), // Version (good for cache-busting)
-        true // Load in footer (true) or header (false)
+        'mytheme3-js', 
+        get_template_directory_uri() . '/js/progressbar.js', 
+        array('jquery'), 
+        filemtime(get_template_directory() . '/js/progressbar.js'), 
+        true 
     );
 }
 add_action('wp_enqueue_scripts', 'mytheme_enqueue_scripts');
 
 
 function custom_excerpt_length($length) {
-    return 30; // Change 20 to the desired word count
+    return 30; 
 }
 add_filter('excerpt_length', 'custom_excerpt_length');
 
@@ -98,23 +96,19 @@ add_action("admin_post_review_form", "demo_review_form_handler");
 add_action("admin_post_nopriv_review_form", "demo_review_form_handler");
 
 function custom_modal_scripts() {
-    // 1. Register the script file
     wp_register_script( 
         'modal-handler', 
-        get_template_directory_uri() . '/js/modal-handler.js', // <-- Adjust this path to your JS file
+        get_template_directory_uri() . '/js/modal-handler.js', 
         array(), 
         '1.0', 
-        true // Load in footer for better performance
+        true 
     );
-
-    // 2. Enqueue the script
     wp_enqueue_script( 'modal-handler' );
 }
-// Hook the function to the correct action
+
 add_action( 'wp_enqueue_scripts', 'custom_modal_scripts' );
 
 function demo_testimonial_form_handler() {
-    //aint noone wanna log in to write a testimonial
     if ( ! is_user_logged_in() ) {
         wp_die('You must be logged in to submit a testimonial.');
     }
