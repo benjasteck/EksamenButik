@@ -352,9 +352,7 @@ height: 30px;
   }
 }
 @media screen and (min-width: 800px) {
-  
- 
-  
+   
 }
 .partnerTitle{
     text-align: center;
@@ -587,8 +585,6 @@ flex: 1;
     margin-top: 30px;
     display: flex;
     gap: 30px;
-  
-
 }
 .testimonial{
     width: 500px;
@@ -797,7 +793,6 @@ animation-play-state: paused;
     padding-left: 30px;
     font-size: 16px;
 }
-
 .inputContainer label::before {
   content: '';
   position: absolute;
@@ -816,15 +811,12 @@ animation-play-state: paused;
   background: white;
   transform: translateY(-30%);
 }
-
 .inputContainer label::before {
   left: 5px;
 }
-
 .inputContainer label::after {
   right: 4px; 
 }
-
 .twoinputsContainer{
     display: flex;
     width: 100%;
@@ -985,9 +977,7 @@ height: 150px;
     font-size: 16px;
     font-weight: 400;
     position: relative; 
-    
 }
-
 .tag::before {
     content: '';
     position: absolute;
@@ -1001,11 +991,9 @@ height: 150px;
     transition: opacity 0.5s ease;
     z-index: -1; 
 }
-
 .tag:hover::before {
     opacity: 1; 
 }
-
 .blogSnippet{
     font-size: 32px;
     margin-top: 50px;
@@ -1035,8 +1023,6 @@ text-align: center;
 }
 .stickycontainer{
 height: 100vh; 
-
-  
 }
 .stickyImg2:nth-child(2) {
   top: 110px; 
@@ -1061,7 +1047,6 @@ height: 100vh;
     width: 60%;
     margin: 0 auto;
     margin-top: 100px;
-    
 }
 .BlogBottomSubTitle{
     font-size: 32px;
@@ -1082,7 +1067,6 @@ height: 100vh;
   justify-content: center;
   margin: 0px auto;
   margin-top: 30px;
-  
 }
 .blogBottomBtn p{
     margin: 0;
@@ -1095,7 +1079,6 @@ footer{
     background-color: #2a2a2a;
     background-size: cover;
     padding-bottom: 5rem;
-    
 }
 .footerContainerTop{
     width: calc(100% - 100px);
@@ -1107,7 +1090,6 @@ footer{
     width: calc(100% - 100px);
     height: 20%;
     margin: 0 auto;
-    
 }
 .topContainerLeft{
     flex-grow: 1;
@@ -1199,7 +1181,6 @@ color: white;
     color: #fff;
     letter-spacing: .12em;
     line-height: 140%;
-    
 }
 .addressTitle{
      font-weight: 70;
@@ -1331,7 +1312,6 @@ height: 450px;
 .mal2Hojre{
     flex-basis: 45%;
     height: 700px;
-    
 }
 .mal2Hojre h4{
     font-size: 30px;
@@ -1382,8 +1362,6 @@ width: 100%;
     height: 1000px;
     display: flex;
     justify-content: space-between;
-    
-
 }
 .polytechWrapperLeft{
     margin: 150px 0;
@@ -1493,9 +1471,7 @@ margin-bottom: 150px;
 flex-basis: 47%;
 }
 .osWrapperLeft img{
-   
     object-fit: cover;
-   
     position: absolute;
   top: -220%;
   width: auto;
@@ -1503,7 +1479,6 @@ flex-basis: 47%;
   height: 140%;
   min-height: 100%;
   border-radius: 15px;
-    
 }
 .mal1Hojre {
   flex-basis: 40%;
@@ -1557,10 +1532,9 @@ flex-basis: 47%;
     bottom: 0;
     left: 0;
     z-index: 10;
-    color: #1a1a1af0; /* Example color */
+    color: #1a1a1af0;
     background-color: rgba(0, 0, 0, 0.5);
     opacity: 0; 
-    /* This line is key: it tells the browser to smoothly transition the opacity over 0.3 seconds */
     transition: opacity 0.3s ease-in-out; 
     display: none;
 }
@@ -1635,12 +1609,10 @@ flex-basis: 47%;
     line-height: 0;
     transform: translateY(-5px);
 }
-
-
 input:focus,
 textarea:focus {
-  color: white; /* text color while typing */
-  border-color: grey; /* optional: border highlight */
+  color: white; 
+  border-color: grey; 
   padding-left: 20px;
   font-size: 20px;
 }
@@ -1659,31 +1631,28 @@ textarea:focus {
 }
 
 .emoji-stars input {
-  display: none; /* hide the radio buttons */
+  display: none; 
 }
 
 .emoji-stars label {
   font-size: 4rem;
   cursor: pointer;
   transition: transform 0.15s ease, text-shadow 0.15s ease;
-  color: whitesmoke; /* default grey */
+  color: whitesmoke; 
   line-height: 60px;
 }
 
 .emoji-stars label:hover,
-/* Target all labels that are siblings *before* the current label in the source order */
 .emoji-stars label:hover ~ label {
     color: #ffd055;
     transform: scale(1.2);
 }
 
-/* New rule: Target the labels that are siblings *after* the selected one */
 .emoji-stars input:checked ~ label {
-    color: #ffd055; /* selected stars */
+    color: #ffd055; 
 }
 #testimonialInput{
     margin-top: auto;
-    
     background-color: transparent;
     appearance: none;
     outline: none;
@@ -1705,7 +1674,6 @@ textarea:focus {
 }
 #testimonialInputCancel{
     margin-top: auto;
-    
     background-color: transparent;
     appearance: none;
     outline: none;
@@ -1747,14 +1715,12 @@ textarea:focus {
     width: 150px;
     transition: 0.3s;
     text-align: center;
-    
 }
 .subBtn:hover{  
     background-color: #00C8A7;
     border-color: #00C8A7;
 }
 #slider {
-    
     width: 100%;
     max-width: 100%;
     text-align: center;
@@ -1766,16 +1732,12 @@ textarea:focus {
     cursor:pointer;
     text-decoration: none;
  }
- #slides {
-    
-    
-    
+ #slides { 
     position: relative;
     z-index: 1;
  }
  #overflow {
     width: 100%;
-    
  }
  #slide1:checked ~ #slides .inner {
     margin-left: 0;
@@ -1792,7 +1754,6 @@ textarea:focus {
  #slides .inner {
     transition: margin-left 800ms cubic-bezier(0.770, 0.000, 0.175, 1.000);
     width: 400%;
-    
     height: fit-content;
  }
  #slides .slide {
