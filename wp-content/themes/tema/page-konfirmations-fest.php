@@ -17,8 +17,6 @@
 
 <div class="product-listing-area">
     <?php 
-    // Option 1: Call the reusable function directly, specifying the tag slug
-    // We are calling render_products_by_tag() and echoing its output.
     echo render_products_by_tag( 'KonfirmationsFest' ); 
     ?>
 </div>
