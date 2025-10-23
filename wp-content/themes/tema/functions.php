@@ -141,3 +141,50 @@ function shop_enable_woocommerce(){
     add_theme_support("woocommerce");
 }
 add_action("after_setup_theme", "shop_enable_woocommerce");
+
+function render_products_by_tag( $tag_slug ) {
+    $args = array(
+        'post_type'      => 'product',
+        'post_status'    => 'publish',
+        'posts_per_page' => 12,
+        'tax_query'      => array(
+            array(
+                'taxonomy' => 'product_tag',
+                'field'    => 'slug',
+                'terms'    => $tag_slug, // Dynamic tag slug
+            ),
+        ),
+    );
+
+    $loop = new WP_Query( $args );
+    $output = '';
+
+    if ( $loop->have_posts() ) {
+        ob_start();
+
+        echo '<ul class="products-list tag-' . esc_attr( $tag_slug ) . '">';
+
+        while ( $loop->have_posts() ) {
+            $loop->the_post();
+            $product = wc_get_product( get_the_ID() );
+
+            echo '<li>';
+            echo '<div class="product-img-container">' . get_the_post_thumbnail() . '</div>';
+            
+            echo '<h4>' . esc_html( get_the_title() ) . '</h4>';
+            echo '<p class="price">' . $product->get_price_html() . '</p>';
+            echo '<a href="' . esc_url( get_permalink() ) . '">See more</a>';
+            echo '</li>';
+        }
+        echo '</ul>';
+
+        wp_reset_postdata();
+        $output = ob_get_clean();
+
+    } else {
+        wp_reset_postdata();
+        $output = '<p>No products found with the tag "' . esc_html( $tag_slug ) . '".</p>';
+    }
+
+    return $output;
+}

@@ -420,7 +420,7 @@ height: 30px;
     top: 160px;
 }
 #image-group3{
-    top: 145px;
+    top: 175px;
 }
 .stickyImg{
     position: relative;
@@ -928,10 +928,9 @@ height: 150px;
 .blogText{
     flex-basis: 60%;
     height: 100%;
-    margin-top: 50px;
+    margin-top: 10px;
     display: flex;
     align-items: center;
-    top: 150px;
     margin-bottom: 40px;
 }
 .progressbar{
@@ -952,7 +951,7 @@ height: 150px;
     height: fit-content;
 }
 .blogTitel{
-    font-size: 96px;
+    font-size: clamp(40px, 6vw, 92px);
     font-weight: 600;
 }
 .tagContainer{
@@ -995,7 +994,7 @@ height: 150px;
     opacity: 1; 
 }
 .blogSnippet{
-    font-size: 32px;
+    font-size: clamp(20px, 2vw, 32px);
     margin-top: 50px;
     font-weight: 400;
 }
@@ -1214,7 +1213,7 @@ color: white;
     height: 50px;
     position: absolute;
     left: 50%;
-    bottom: 150px;
+    bottom: 10vh;
     margin-bottom: 50px;
     background-color: #00000040;
     backdrop-filter: blur(4px);
@@ -1853,3 +1852,89 @@ textarea:focus {
  .headerSlider{
     margin-top: 100px;
  }
+
+
+
+.products-list {
+    display: flex;
+    width: calc(100% - 100px);
+    margin: 200px auto;
+    margin-top: 30vh;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.products-list li {
+    flex-basis: 33%;
+    flex-grow: 0; 
+    transition: flex-basis 0.2s ease-in-out, 
+                flex-grow 0.2s ease-in-out, 
+                transform 0.3s ease-in-out;
+}
+.products-list li::marker {
+    content: ''; 
+}
+.product-img-container {
+    width: 100%;
+    height: 47vh;
+}
+
+.product-img-container img {
+    height: 47vh; 
+    width: 100%;  
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+.products-list li:hover {
+    flex-grow: 1; 
+    flex-basis: 800px;
+    transform: translateY(-20px);
+    
+}
+.products-list li:hover .product-img-container {
+    filter: drop-shadow(5px 10px 10px #000000);
+    border-radius: 100px; /* Note: border-radius on the container might crop the shadow slightly */
+}
+.products-list li:hover p{
+    filter: drop-shadow(5px 10px 10px #000000);
+    color: #C700A2;
+     /* Note: border-radius on the container might crop the shadow slightly */
+}
+.products-list li:hover h4{
+    filter: drop-shadow(5px 10px 10px #000000);
+     /* Note: border-radius on the container might crop the shadow slightly */
+}
+
+
+.products-list li h4{
+    text-align: center;
+    margin-top: 28px;
+    font-size: 28px;
+}
+.products-list li p{
+    text-align: center;
+    margin-top: 14px;
+    font-size: 18px;
+    list-style: none;
+}
+.products-list li a{
+    display: block;
+    height: 50px;
+    width: 180px;
+    border-radius: 25px;
+    background: linear-gradient(45deg, #00C8A7 0%, #4445BC 50%, #C700A2 100%);
+    border: none;
+    font-size: 20px;
+    font-weight: 700;
+    color: #ffffff;
+    text-decoration: none;
+    text-align: center;
+    line-height: 50px;
+    margin: 28px auto;
+    transition: all 0.2s ease-in-out;
+}
+.products-list li a:hover{
+    transform: scale(1.2);
+    filter: drop-shadow(5px 10px 10px #000000);
+}
