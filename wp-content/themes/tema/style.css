@@ -1938,3 +1938,87 @@ textarea:focus {
     transform: scale(1.2);
     filter: drop-shadow(5px 10px 10px #000000);
 }
+.product{
+    width: calc(100% - 100px);
+    margin: 0 auto;
+}
+.wp-post-image{
+    border-radius: 15px;
+}
+.price{
+    color: #C700A2 !important; 
+}
+.quantity{
+    display: none;
+}
+.single_add_to_cart_button{
+    background-color: #00C8A7 !important;
+    background: linear-gradient(45deg, #00C8A7 0%, #4445BC 50%, #C700A2 100%) !important;
+    border-radius: 25px !important;
+    height: 55px !important;
+    width: 180px !important;
+    padding: 0 !important;
+    font-size: 20px !important;
+    font-weight: 700 !important;
+    margin-top: 25px !important;
+    transition: 0.2s ease-in-out;
+}
+.single_add_to_cart_button:hover{
+    transform: scale(1.2);
+    filter: drop-shadow(5px 10px 10px #000000);
+}
+.onsale{
+    background-color: #C700A2 !important;
+}
+.tagged_as{
+    display: none;
+}
+.posted_in a{
+ color: white;  
+ padding-left: 10px; 
+}
+.posted_in a:hover{
+ color: #d0d0d0;   
+}
+.posted_in{
+    font-size: 20px;
+}
+.attachment-woocommerce_thumbnail{
+    border-radius: 15px;
+    transition: 0.3s ease-in-out !important;
+}
+.attachment-woocommerce_thumbnail:hover{
+    
+    filter: drop-shadow(5px 10px 10px #000000);
+}
+
+.woocommerce:where(body:not(.woocommerce-block-theme-has-button-styles)) a.button{
+    background-color: #2a2a2a !important;
+    border: 2px solid white !important;
+    border-radius: 15px !important;
+    color: white !important;
+    transition: 0.3s ease-in-out !important;
+}
+.woocommerce:where(body:not(.woocommerce-block-theme-has-button-styles)) a.button:hover{
+filter: drop-shadow(5px 10px 10px #000000);
+background-color: #31317c !important;
+}
+.woocommerce-loop-product__title{
+    color: white;
+}
+.wc-tabs{
+    padding-top: 100px !important;
+}
+.woocommerce-message{
+    background-color: #9ff5b9 !important;
+    border-top: none !important;
+    color: #000000 !important;
+    font-size: 20px;
+    padding: 1em 50px 1em 4.5em;
+}
+.woocommerce-message::before{
+    color: #3BD56A;
+    font-size: 30px;
+    top: none;
+    left: 50px !important;
+}

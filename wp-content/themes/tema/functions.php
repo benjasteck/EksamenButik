@@ -188,3 +188,21 @@ function render_products_by_tag( $tag_slug ) {
 
     return $output;
 }
+add_action( 'wp_head', function() {
+    if ( is_product() ) : ?>
+<style>
+#header {
+    height: 160px;
+}
+
+.button-wrapper {
+    display: none;
+}
+
+.main-container {
+    height: 85vh;
+}
+</style>
+<?php
+    endif;
+});
