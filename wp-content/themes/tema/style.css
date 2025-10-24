@@ -1948,9 +1948,7 @@ textarea:focus {
 .price{
     color: #C700A2 !important; 
 }
-.quantity{
-    display: none;
-}
+
 .single_add_to_cart_button{
     background-color: #00C8A7 !important;
     background: linear-gradient(45deg, #00C8A7 0%, #4445BC 50%, #C700A2 100%) !important;
@@ -2022,3 +2020,160 @@ background-color: #31317c !important;
     top: none;
     left: 50px !important;
 }
+.woocommerce{
+    width: calc(100% - 100px);
+    margin: 0 auto;
+    
+}
+.woocommerce-cart-form{
+    height: 100%;
+}
+.product-thumbnail{
+    width: 25vw;
+
+}
+.product-thumbnail a img{
+    width: 20vw !important;
+    height:  100% !important;
+    position: absolute;
+  left: 0px; 
+  top: 50%;
+  transform: translateY(-50%);
+  object-fit: cover;
+}
+.woocommerce-cart-form{
+    display: flex;
+    flex-direction: column;
+}
+thead{
+    font-size: 48px;
+}
+tbody{
+    border-collapse: separate !important; /* allows spacing between rows */
+  border-spacing: 0 10px !important;
+}
+tbody tr{
+
+    font-size: 30px;
+    
+    padding-top: 50px;
+}
+.woocommerce-cart-form table {
+  border-collapse: separate !important;
+  border-spacing: 0 25px !important; /* space between rows */
+}
+
+.woocommerce-cart-form__cart-item {
+  background: #1f1f1f;       /* optional, makes rows look like cards */
+  border-radius: 20px;     /* soft corners */
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* optional subtle shadow */
+  filter: drop-shadow(5px 10px 10px #000000);
+  position: relative;
+    height: 182px;
+    z-index: 1;
+}
+.product-remove{
+    width: 200px !important;
+    position: absolute;
+    z-index: 99;
+}
+.woocommerce a.remove{
+    color: #FF3131 !important;
+}
+.product-name a{
+    color: white;
+    text-decoration: none;
+    position: relative;
+    transition: all 0.1s ease-in-out;
+}
+
+
+.product-name a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -3px; /* distance from text */
+  width: 100%;
+  height: 2px; /* underline thickness */
+  background: linear-gradient(45deg, #00C8A7 0%, #4445BC 50%, #C700A2 100%);
+  
+}
+.product-name a:hover{
+    color: #c0c0c0;
+    font-weight: bold;
+}
+.quantity input{
+    background: none;
+    border: 2px solid white;
+    width: 90% !important;
+    color: white;
+    font-size: 30px;
+    text-align: left !important;
+    padding-left: 30px;
+    border-radius: 25px;
+}
+.actions{
+    font-size: 20px;
+    border: none !important;
+}
+.woocommerce table.shop_table{
+    border: none !important;
+}
+.coupon input{
+    font-size: 20px;
+    margin: 0 !important;
+    border-radius: 15px 0 0 15px !important;
+    background-color: #2a2a2a !important;
+    border: 1px solid white;
+    color: #fcfcfc;
+}
+.coupon input::placeholder{
+    color: #34655f !important;
+}
+.woocommerce #content table.cart td.actions .input-text, .woocommerce table.cart td.actions .input-text, .woocommerce-page #content table.cart td.actions .input-text, .woocommerce-page table.cart td.actions .input-text{
+    width: auto;
+}
+.coupon button{
+    height: 43px;
+    line-height: 10px !important; 
+    border-radius: 0 15px 15px 0 !important;
+    background-color: #00C8A7 !important;
+    border: 1px solid white !important;
+    border-left: none;
+    color: white !important;
+}
+
+button[name="update_cart"] {
+  background: linear-gradient(45deg, #00C8A7 0%, #4445BC 50%, #C700A2 100%) !important;
+    border-radius: 15px !important;  
+}
+.cart-collaterals{
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+.cart_totals{
+    float: none !important;
+    width: 100% !important;
+}
+.shipping-calculator-button{
+color: rgb(196, 186, 255);
+    text-decoration: none;
+    position: relative;
+    transition: all 0.1s ease-in-out;
+}
+.shipping-calculator-button::after{
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -3px; /* distance from text */
+  width: 100%;
+  height: 2px; /* underline thickness */
+  background: linear-gradient(45deg, #00C8A7 0%, #4445BC 50%, #C700A2 100%);
+  margin-left: 0 !important;  
+  content: '' !important;
+}
+.wc-proceed-to-checkout a{
+    background-color: #00C8A7 !important;
+    border-radius: 15px !important;
+}
+
