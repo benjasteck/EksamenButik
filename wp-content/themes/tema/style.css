@@ -2233,3 +2233,116 @@ button[name="woocommerce_checkout_place_order"] {
     border-radius: 15px !important;  
     font-size: 20px !important;
 }
+.woocommerce-MyAccount-navigation{
+    width: 100% !important;
+    display: flex !important;
+    padding: 16px !important;
+    padding-left: 2% !important;
+    font-size: clamp(18px, 2vw, 24px) !important;
+    font-weight: bold;
+    color: white;
+     border: none !important;
+}
+.woocommerce-MyAccount-navigation ul{
+    
+}
+.woocommerce-MyAccount-navigation ul {
+    list-style: none; /* Recommended: Remove bullet points */
+    padding-left: 0;   /* Recommended: Remove default left padding */
+    width: 100% !important;
+    /* THE KEY PROPERTY */
+    display: flex;     
+   
+    
+    /* Optional: To position them horizontally */
+    
+    justify-content: space-around; /* Aligns them to the left */
+}
+.woocommerce-MyAccount-navigation ul li a{
+  color: white !important;
+    text-decoration: none;
+    position: relative;
+    transition: all 0.1s ease-in-out;  
+    margin-left: 10px;
+}
+.woocommerce-MyAccount-navigation ul li a::after{
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -2px; /* distance from text */
+  width: 100%;
+  height: 2px; /* underline thickness */
+  background: linear-gradient(45deg, #00C8A7 0%, #4445BC 50%, #C700A2 100%);
+  margin-left: 0 !important;  
+  content: '' !important;
+  margin-left: 10px;
+}
+.woocommerce-MyAccount-navigation ul li a:hover{
+    color: #c0c0c0 !important;
+    font-weight: normal !important;
+}
+.woocommerce-MyAccount-content{
+    font-size: 27px;
+    float: left !important;
+    width: 50% !important;
+    margin-top: 10vh;
+}
+.woocommerce-MyAccount-content p:nth-of-type(1){
+    font-size: 45px !important;
+}
+.woocommerce-MyAccount-content p:nth-of-type(1) strong:nth-of-type(1){
+    color: #C700A2 !important;
+}
+.woocommerce-MyAccount-content p a{
+    color: white !important;
+    transition: all 0.1s ease-in-out;
+}
+.woocommerce-MyAccount-content p a:hover{
+    color: #c0c0c0 !important;
+    font-weight: bold !important;
+}
+.woocommerce-MyAccount-content p:nth-of-type(1) a{
+  color: white !important;
+    text-decoration: none;
+    position: relative;
+    transition: all 0.1s ease-in-out;  
+    
+}
+.woocommerce-MyAccount-content p:nth-of-type(1) a::after{
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -1px; /* distance from text */
+  width: 100%;
+  height: 4px; /* underline thickness */
+  background: linear-gradient(45deg, #00C8A7 0%, #4445BC 50%, #C700A2 100%);
+  margin-left: 0 !important;  
+  content: '' !important;
+  
+}
+.woocommerce-MyAccount-content p:nth-of-type(1) a:hover{
+    color: #c0c0c0 !important;
+    font-weight: normal !important;
+}
+.woocommerce-orders-table__cell.woocommerce-orders-table__cell-order-number a{
+    color: #4445BC !important;
+}
+.button.wc-forward{
+    background-color: #2a2a2a !important;
+    float: left !important;
+}
+.edit{
+    float: left !important;
+    color: #4445BC !important;
+}
+.col2-set{
+    float: right;
+    margin-top: 50px;
+}
+label[for="account_first_name"] {
+    font-size: 27px !important
+    
+}
+label[for="password_current"], label[for="password_1"], label[for="password_2"] {
+    font-size: 20px !important
+}

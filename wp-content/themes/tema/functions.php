@@ -189,7 +189,7 @@ function render_products_by_tag( $tag_slug ) {
     return $output;
 }
 add_action( 'wp_head', function() {
-    if ( is_product() or is_cart() or is_checkout() or is_shop()) : ?>
+    if ( is_product() or is_cart() or is_checkout() or is_shop() or is_account_page()) : ?>
 <style>
 #header {
     height: 160px;
@@ -201,6 +201,16 @@ add_action( 'wp_head', function() {
 
 .main-container {
     height: 85vh;
+}
+</style>
+<?php
+    endif;
+});
+add_action( 'wp_head', function() {
+    if ( is_account_page()) : ?>
+<style>
+#header {
+    height: 130px;
 }
 </style>
 <?php
