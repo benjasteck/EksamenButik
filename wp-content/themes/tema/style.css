@@ -2146,6 +2146,7 @@ tbody tr{
 button[name="update_cart"] {
   background: linear-gradient(45deg, #00C8A7 0%, #4445BC 50%, #C700A2 100%) !important;
     border-radius: 15px !important;  
+    color: white !important;
 }
 .cart-collaterals{
     margin-top: 100px;
@@ -2328,7 +2329,7 @@ button[name="woocommerce_checkout_place_order"] {
     color: #4445BC !important;
 }
 .button.wc-forward{
-    background-color: #2a2a2a !important;
+    background-color: #00C8A7 !important;
     float: left !important;
 }
 .edit{
