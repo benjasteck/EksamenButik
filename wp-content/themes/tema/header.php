@@ -76,11 +76,11 @@ if( $link ):
                 </div>
                 <div class="navMid">
                     <ul>
-                        <li><a href="#main" class="navBtn selected">Hjem</a></li>
-                        <li><a href="/arrangement" class="navBtn">Arrangement</a></li>
-                        <li><a href="/djs" class="navBtn">DJs</a></li>
-                        <li><a href="/udlejning" class="navBtn">Udlejning</a></li>
-                        <li><a href="/om-os" class="navBtn">Om Os</a></li>
+                        <li><a href="#main" class="navBtn selected"><?php pll_e("Hjem"); ?></a></li>
+                        <li><a href="/arrangement" class="navBtn"><?php pll_e("Arrangement"); ?></a></li>
+                        <li><a href="/djs" class="navBtn"><?php pll_e("DJs"); ?></a></li>
+                        <li><a href="/udlejning" class="navBtn"><?php pll_e("Udlejning"); ?></a></li>
+                        <li><a href="/om-os" class="navBtn"><?php pll_e("Om Os"); ?></a></li>
                     </ul>
                 </div>
                 <div class="navRight">

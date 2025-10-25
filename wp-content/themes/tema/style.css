@@ -2244,9 +2244,6 @@ button[name="woocommerce_checkout_place_order"] {
     color: white;
      border: none !important;
 }
-.woocommerce-MyAccount-navigation ul{
-    
-}
 .woocommerce-MyAccount-navigation ul {
     list-style: none; /* Recommended: Remove bullet points */
     padding-left: 0;   /* Recommended: Remove default left padding */
@@ -2346,4 +2343,37 @@ label[for="account_first_name"] {
 }
 label[for="password_current"], label[for="password_1"], label[for="password_2"] {
     font-size: 20px !important
+}
+.languagePicker{
+    display: flex;
+    float: right;
+    gap: 20px;
+}
+.languagePicker li{
+    list-style: none;
+}
+.languagePicker li a{
+    color: white;
+    letter-spacing: .12em;
+    line-height: 140%;
+}
+
+.languagePicker li.current-lang span{
+  color: white !important;
+    text-decoration: none !important;
+    position: relative;
+    transition: all 0.1s ease-in-out;  
+    font-weight: bold;
+}
+.languagePicker li.current-lang span::after{
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 4px; /* distance from text */
+  width: 100%;
+  height: 1.2px; /* underline thickness */
+  background: linear-gradient(45deg, #00C8A7 0%, #4445BC 50%, #C700A2 100%);
+  margin-left: 0 !important;  
+  content: '' !important;
+  
 }

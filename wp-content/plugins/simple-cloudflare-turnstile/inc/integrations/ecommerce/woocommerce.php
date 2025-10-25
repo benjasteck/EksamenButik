@@ -137,7 +137,31 @@ if(get_option('cfturnstile_woo_checkout')) {
 					}
 				}
 			}
-		
+
+			// Additional skip: WooPayments Express or Stripe Express (Apple Pay / Google Pay / Link) on block checkout.
+			if ( ! $skip ) {
+				$payment_method = $request->get_param( 'payment_method' );
+				$payment_data   = $request->get_param( 'payment_data' );
+				$express_detected = false;
+				if ( is_array( $payment_data ) ) {
+					foreach ( $payment_data as $pd_item ) {
+						if ( is_array( $pd_item ) && isset( $pd_item['key'] ) ) {
+							$key   = $pd_item['key'];
+							$value = isset( $pd_item['value'] ) ? $pd_item['value'] : '';
+							if ( in_array( $key, array( 'express_payment_type', 'payment_request_type' ), true )
+								&& ! empty( $value ) ) {
+								$express_detected = true;
+								break;
+							}
+						}
+					}
+				// Allow customization via filter, defaults to skip when WooPayments or Stripe express is detected.
+				$skip_on_express = apply_filters( 'cfturnstile_skip_on_express_pay', ( ($payment_method === 'woocommerce_payments' || $payment_method === 'stripe') && $express_detected ), $payment_method, $payment_data, $request );
+				if ( $skip_on_express ) {
+					$skip = 1;
+				}
+				}
+			}
 
 			// Start session
 			if (!session_id()) { session_start(); }
@@ -193,9 +217,18 @@ if(get_option('cfturnstile_woo_checkout')) {
 // On payment complete clear session
 add_action('woocommerce_checkout_order_processed', 'cfturnstile_woo_checkout_clear', 10, 1);
 add_action('woocommerce_store_api_checkout_order_processed', 'cfturnstile_woo_checkout_clear', 10, 1);
+add_action('woocommerce_thankyou', 'cfturnstile_woo_checkout_clear', 10, 1);
 function cfturnstile_woo_checkout_clear($order_id) {
 	if(isset($_SESSION['cfturnstile_checkout_checked'])) { unset($_SESSION['cfturnstile_checkout_checked']); }
 }
+
+// Additional clears to prevent lingering validation across session changes
+function cfturnstile_woo_clear_session() {
+	if (!session_id()) { session_start(); }
+	if (isset($_SESSION['cfturnstile_checkout_checked'])) { unset($_SESSION['cfturnstile_checkout_checked']); }
+}
+// Logout
+add_action('wp_logout', 'cfturnstile_woo_clear_session', 10, 0);
 
 // Woo Checkout Pay Order Check
 if(get_option('cfturnstile_woo_checkout_pay')) {
@@ -289,7 +322,7 @@ if(get_option('cfturnstile_woo_reset')) {
 
 // Check if WooCommerce block checkout page
 function cfturnstile_is_block_based_checkout() {
-    if ( is_checkout() ) {
+    if ( is_checkout() && !isset($_GET['pay_for_order']) ) {
         $checkout_page_id = wc_get_page_id( 'checkout' );
         if ( $checkout_page_id && has_block( 'woocommerce/checkout', get_post( $checkout_page_id )->post_content ) ) {
             return true;

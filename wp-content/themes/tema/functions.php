@@ -216,3 +216,23 @@ add_action( 'wp_head', function() {
 <?php
     endif;
 });
+
+function plp_register_strings(){
+    pll_register_string("Polylang Playground", "Hjem");
+    pll_register_string("Polylang Playground", "Arrangement");
+    pll_register_string("Polylang Playground", "DJs");
+    pll_register_string("Polylang Playground", "Udlejning");
+    pll_register_string("Polylang Playground", "Om Os");
+    pll_register_string("Polylang Playground", "Arrangementer");
+    pll_register_string("Polylang Playground", "Se Mere");
+    pll_register_string("Polylang Playground", "Skriv en testimonial");
+    pll_register_string("Polylang Playground", "Skriv Dit Navn");
+    pll_register_string("Polylang Playground", "Skriv Din Email");
+    pll_register_string("Polylang Playground", "Skriv Dit Telefon Nummer");
+    pll_register_string("Polylang Playground", "Skriv Dato For Fest");
+    pll_register_string("Polylang Playground", "Skriv Antal Gæster");
+    pll_register_string("Polylang Playground", "Beskriv fest, spilletid samt ekstra tanker");
+    pll_register_string("Polylang Playground", "Send forespørgsel");
+    pll_register_string("Polylang Playground", "Læs Mere");
+}
+add_action("init","plp_register_strings");

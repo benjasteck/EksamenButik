@@ -52,7 +52,7 @@ $blogBaggrund = get_field("blog_background");
                     </div>
                     <p class="blogSnippet"><?php echo esc_html($excerpt); ?></p>
                     <div class="blogBtn">
-                        <a href="<?php echo esc_url($blogUrl["url"]); ?>">Læs Mere</a>
+                        <a href="<?php echo esc_url($blogUrl["url"]); ?>"><?php echo pll__('Læs Mere'); ?></a>
                     </div>
                 </div>
             </div>

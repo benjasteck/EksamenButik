@@ -23,7 +23,7 @@ $VideoTitel = get_field("video_titel");
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                 referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
         </div>
-        <a href="">Se Mere</a>
+        <a href=""><?php pll_e("Se Mere"); ?></a>
     </div>
 </section>
 

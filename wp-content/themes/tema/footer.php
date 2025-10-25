@@ -29,6 +29,7 @@
                 <p>(+45)11223344</p>
                 <p>random@email.dk</p>
             </address>
+            <ul class="languagePicker"><?php pll_the_languages(array("show_flags" => true)) ?></ul>
         </div>
     </div>
     <div class="footerContainerBottom">
