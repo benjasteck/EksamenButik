@@ -299,7 +299,7 @@ color: #2a2a2a;
         border-right-color: initial; /* Ensure the border is visible at the start */
     }
     100% { 
-        width: 15%; 
+        width: 26%; 
         border-right-color: transparent; /* Makes the border invisible at the end */
     }
 }
@@ -2619,4 +2619,15 @@ label[for="password_current"], label[for="password_1"], label[for="password_2"] 
   margin-left: 0 !important;  
   content: '' !important;
   
+}
+.payment_box {
+    background-color: #2a2a2a !important;
+    color: white !important;
+}
+.PickerItem{
+    background-color: #2a2a2a !important;
+    color: #31317c !important;
+}
+.AnimateSinglePresence{
+    color: #31317c !important;
 }
