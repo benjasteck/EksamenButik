@@ -86,7 +86,7 @@ $form_label6 = get_field("form_label6");
                         placeholder="<?php echo pll__('Beskriv fest, spilletid samt ekstra tanker'); ?>">
                 </div>
                 <div class="inputBtn">
-                    <p><?php echo pll__('Send forespørgsel'); ?></p>
+                    <a href=""><?php echo pll__('Send forespørgsel'); ?></a>
                 </div>
             </div>
         </div>

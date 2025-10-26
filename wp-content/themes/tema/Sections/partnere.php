@@ -4,7 +4,7 @@ $PartnerTitel = get_field("partner_title");
 
 
 <section id="partnere">
-    <h2 class="partnerTitle"
+    <h2 class="partnerTitle hidden"
         aria-label="A view of our partners containing Nordic Event, Skat, Leo, Danske Bank, Mearsk, Rigshopitalet, SDU university of southern Denmark, TDC Telenor, Rema tusind.">
         <?php echo($PartnerTitel);?></h2>
     <div class="logoLine" tabindex="0">
@@ -40,4 +40,5 @@ $PartnerTitel = get_field("partner_title");
         }
         ?>
     </div>
+
 </section>

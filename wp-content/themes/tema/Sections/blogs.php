@@ -63,12 +63,13 @@ $blogBaggrund = get_field("blog_background");
         <?php endwhile; ?> <?php wp_reset_postdata(); ?> <?php endif; ?>
         <button onclick="smoothScroll(document.getElementById('blogContainer'))" class="upBtn">↑</button>
     </div>
-    <h1 class="blogBottomTitle">Vi klarer alt det praktiske og tekniske</h1>
-    <h2 class="BlogBottomSubTitle">Til alle dine fester leverer vi det perfekte mobildiskotek. Med en professionel DJ
+    <h1 class="blogBottomTitle hidden">Vi klarer alt det praktiske og tekniske</h1>
+    <h2 class="BlogBottomSubTitle hidden">Til alle dine fester leverer vi det perfekte mobildiskotek. Med en
+        professionel DJ
         bag pulten får du den helt rigtige musik og et imponerende lyd & lys show, der forvandler ethvert rum til en
         fest.</h2>
     <div class="blogBottomBtn">
-        <p>BOOK TID</p>
+        <a href="">BOOK TID</a>
     </div>
     <style>
     #blogs {

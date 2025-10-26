@@ -55,6 +55,13 @@ function mytheme_enqueue_scripts() {
         filemtime(get_template_directory() . '/js/progressbar.js'), 
         true 
     );
+    wp_enqueue_script(
+        'mytheme4-js', 
+        get_template_directory_uri() . '/js/scrollHandler.js', 
+        array('jquery'), 
+        filemtime(get_template_directory() . '/js/scrollHandler.js'), 
+        true 
+    );
 }
 add_action('wp_enqueue_scripts', 'mytheme_enqueue_scripts');
 
@@ -236,3 +243,10 @@ function plp_register_strings(){
     pll_register_string("Polylang Playground", "Læs Mere");
 }
 add_action("init","plp_register_strings");
+
+add_filter('intermediate_image_sizes_advanced', function($sizes){
+    unset($sizes['medium']);
+    unset($sizes['large']);
+    unset($sizes['medium_large']);
+    return $sizes;
+});

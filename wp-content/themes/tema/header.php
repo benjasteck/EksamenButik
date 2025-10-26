@@ -45,6 +45,7 @@ $HeaderPhoneMenu = get_field("phonemenuimg");
     <link href="https://fonts.googleapis.com/css2?family=Goldman:wght@400;700&display=swap" rel="stylesheet">
     <title><?php bloginfo("name"); ?></title>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
     <?php wp_head(); ?>
 </head>
 
