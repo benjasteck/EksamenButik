@@ -1,5 +1,5 @@
-<section id="kunde">
-    <div class="testimonialContainer">
+<section id="kunde" class="hidden">
+    <div class="testimonialContainer ">
         <?php
             $args = array(
             'post_type'      => 'testimonial',

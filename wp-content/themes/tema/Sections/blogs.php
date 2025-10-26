@@ -69,7 +69,7 @@ $blogBaggrund = get_field("blog_background");
         bag pulten får du den helt rigtige musik og et imponerende lyd & lys show, der forvandler ethvert rum til en
         fest.</h2>
     <div class="blogBottomBtn">
-        <a href="">BOOK TID</a>
+        <a href="/shop">BOOK TID</a>
     </div>
     <style>
     #blogs {

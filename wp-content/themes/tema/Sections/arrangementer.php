@@ -30,7 +30,7 @@ $byfesttekst = get_field("arrangement_titel9");
                     alt="<?php echo $bryllupfest ["alt"]?>">
                 <h3><?php echo($bryllupfesttekst); ?></h3>
                 <div class="arrBtn">
-                    <a href=""><?php pll_e("Se Mere"); ?></a>
+                    <a href="/bryllups-fest"><?php pll_e("Se Mere"); ?></a>
                 </div>
             </div>
             <div class="stickyImg">
@@ -38,7 +38,7 @@ $byfesttekst = get_field("arrangement_titel9");
                     alt="<?php echo $firmafest ["alt"]?>">
                 <h3><?php echo($firmafesttekst); ?></h3>
                 <div class="arrBtn">
-                    <a href=""><?php pll_e("Se Mere"); ?></a>
+                    <a href="/firma-fest"><?php pll_e("Se Mere"); ?></a>
                 </div>
             </div>
             <div class="stickyImg">
@@ -46,7 +46,7 @@ $byfesttekst = get_field("arrangement_titel9");
                     alt="<?php echo $konfirmationsfest ["alt"]?>">
                 <h3><?php echo($konfirmationfesttekst); ?></h3>
                 <div class="arrBtn">
-                    <a href=""><?php pll_e("Se Mere"); ?></a>
+                    <a href="/konfirmations-fest"><?php pll_e("Se Mere"); ?></a>
                 </div>
             </div>
         </div>
@@ -56,7 +56,7 @@ $byfesttekst = get_field("arrangement_titel9");
                     alt="<?php echo $gymnasiefest ["alt"]?>">
                 <h3><?php echo($gymnasiefesttekst); ?></h3>
                 <div class="arrBtn">
-                    <a href=""><?php pll_e("Se Mere"); ?></a>
+                    <a href="/gymnasie-fest"><?php pll_e("Se Mere"); ?></a>
                 </div>
             </div>
             <div class="stickyImg">
@@ -64,7 +64,7 @@ $byfesttekst = get_field("arrangement_titel9");
                     alt="<?php echo $efterskolefest ["alt"]?>">
                 <h3><?php echo($efterskolefesttekst); ?></h3>
                 <div class="arrBtn">
-                    <a href=""><?php pll_e("Se Mere"); ?></a>
+                    <a href="/efterskole-fest"><?php pll_e("Se Mere"); ?></a>
                 </div>
             </div>
             <div class="stickyImg">
@@ -72,7 +72,7 @@ $byfesttekst = get_field("arrangement_titel9");
                     alt="<?php echo $ungdomfest ["alt"]?>">
                 <h3><?php echo($ungdomfesttekst); ?></h3>
                 <div class="arrBtn">
-                    <a href=""><?php pll_e("Se Mere"); ?></a>
+                    <a href="/ungdoms-fest"><?php pll_e("Se Mere"); ?></a>
                 </div>
             </div>
         </div>
@@ -82,7 +82,7 @@ $byfesttekst = get_field("arrangement_titel9");
                     alt="<?php echo $bornefest ["alt"]?>">
                 <h3><?php echo($bornefesttekst); ?></h3>
                 <div class="arrBtn">
-                    <a href=""><?php pll_e("Se Mere"); ?></a>
+                    <a href="/borne-disco"><?php pll_e("Se Mere"); ?></a>
                 </div>
             </div>
             <div class="stickyImg">
@@ -90,14 +90,14 @@ $byfesttekst = get_field("arrangement_titel9");
                     alt="<?php echo $fodselsdagfest ["alt"]?>">
                 <h3><?php echo($fodselsdagfesttekst); ?></h3>
                 <div class="arrBtn">
-                    <a href=""><?php pll_e("Se Mere"); ?></a>
+                    <a href="/fodselsdagsfest"><?php pll_e("Se Mere"); ?></a>
                 </div>
             </div>
             <div class="stickyImg">
                 <img src='<?php echo esc_url($byfest["url"]); ?>' loading="lazy" alt="<?php echo $byfest ["alt"]?>">
                 <h3><?php echo($byfesttekst); ?></h3>
                 <div class="arrBtn">
-                    <a href=""><?php pll_e("Se Mere"); ?></a>
+                    <a href="/byfest"><?php pll_e("Se Mere"); ?></a>
                 </div>
             </div>
         </div>

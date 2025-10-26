@@ -6,11 +6,11 @@
         <div class="topContainerLeft">
             <div class="linkContainer">
                 <ul>
-                    <li><a href="">Hjem</a></li>
-                    <li><a href="">Arrangement</a></li>
-                    <li><a href="">Djs</a></li>
-                    <li><a href="">Udlejning</a></li>
-                    <li><a href="">Om Os</a></li>
+                    <li><a href="/">Hjem</a></li>
+                    <li><a href="#arrangementer">Arrangement</a></li>
+                    <li><a href="/shop">Shop</a></li>
+                    <li><a href="/product-category/udlejning/">Udlejning</a></li>
+                    <li><a href="/om-os">Om Os</a></li>
                 </ul>
             </div>
             <h2>Bliv &nbsp;en &nbsp;del &nbsp;af &nbsp;nyhedsbrevet</h2>

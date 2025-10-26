@@ -77,16 +77,16 @@ if( $link ):
                 </div>
                 <div class="navMid">
                     <ul>
-                        <li><a href="#main" class="navBtn selected"><?php pll_e("Hjem"); ?></a></li>
-                        <li><a href="/arrangement" class="navBtn"><?php pll_e("Arrangement"); ?></a></li>
-                        <li><a href="/djs" class="navBtn"><?php pll_e("DJs"); ?></a></li>
-                        <li><a href="/udlejning" class="navBtn"><?php pll_e("Udlejning"); ?></a></li>
+                        <li><a href="/" class="navBtn selected"><?php pll_e("Hjem"); ?></a></li>
+                        <li><a href="/#arrangementer" class="navBtn"><?php pll_e("Arrangement"); ?></a></li>
+                        <li><a href="/shop" class="navBtn">Shop</a></li>
+                        <li><a href="/product-category/udlejning/" class="navBtn"><?php pll_e("Udlejning"); ?></a></li>
                         <li><a href="/om-os" class="navBtn"><?php pll_e("Om Os"); ?></a></li>
                     </ul>
                 </div>
                 <div class="navRight">
                     <div class="CTABtn1">
-                        <a>Book Nu</a>
+                        <a href="/my-account">My Account</a>
                     </div>
                     <div class="extendBtn">
                         <button>
