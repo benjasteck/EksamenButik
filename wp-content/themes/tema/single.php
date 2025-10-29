@@ -10,7 +10,6 @@
 			$categories = get_the_category();
 			$tags = get_the_tags();
 			?>
-
 <article>
     <h1 class="card-title"><?php echo esc_html($title); ?></h1>
     <p class="card-subtitle text-muted mb-3">

@@ -10,7 +10,7 @@ btns.forEach(btn => {
         const rotateX = (y / height) * tiltVal;
         const rotateY = (x / width) * -tiltVal;
 
-        let strength = 0.3;
+        let strength = 0.2;
         gsap.to(btn, {
             x: x * strength,
             y: y * strength,
