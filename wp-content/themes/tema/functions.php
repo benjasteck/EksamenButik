@@ -224,6 +224,29 @@ add_action( 'wp_head', function() {
     endif;
 });
 
+add_action('wp_head', function() {
+    if (is_singular('post')) : ?>
+<style>
+#header {
+    height: 150px;
+}
+
+article {
+    width: calc(100% - 100px);
+    margin: 0 auto;
+}
+
+#comments {
+    width: calc(100% - 100px);
+    margin: 0 auto;
+    margin-top: 100px;
+}
+}
+</style>
+<?php
+    endif;
+});
+
 function plp_register_strings(){
     pll_register_string("Polylang Playground", "Hjem");
     pll_register_string("Polylang Playground", "Arrangement");
