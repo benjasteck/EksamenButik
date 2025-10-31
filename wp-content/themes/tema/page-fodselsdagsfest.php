@@ -17,7 +17,7 @@
 
 <div class="product-listing-area">
     <?php 
-    echo render_products_by_tag( 'FødselsdagsFest' ); 
+    echo render_products_by_tag( 'Fodselsdagsfest' ); 
     ?>
 </div>
 </div>

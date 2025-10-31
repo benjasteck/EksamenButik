@@ -17,7 +17,7 @@
 
 <div class="product-listing-area">
     <?php 
-    echo render_products_by_tag( 'BørneDisco' ); 
+    echo render_products_by_tag( 'BorneDisco' ); 
     ?>
 </div>
 </div>
